@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kuis Bahasa Jepang - Kuroshiro Auto Furigana</title>
+    <title>Kuis Bahasa Jepang - Dark Mode</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Memuat Kuroshiro Browser Bundle & Analyzer dari CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/kuroshiro-browser@latest/dist/kuroshiro.min.js"></script>
 </head>
 <body>
 
     <div class="quiz-container">
         <h2>Kuis Bahasa Jepang</h2>
-        <div id="loading" class="loading-text">Sedang memuat sistem furigana otomatis... Mohon tunggu sebentar.</div>
         
-        <div id="quiz" class="hidden">
+        <div id="quiz">
             <div id="question-container"></div>
             <div class="options" id="options-container"></div>
             <button class="btn" id="next-btn" onclick="nextQuestion()">Selanjutnya</button>
@@ -27,52 +24,62 @@
     <script src="soal.js"></script>
 
     <script>
-        let kuroshiro = new Kuroshiro();
+        // Kamus mini pintar bawaan untuk kata-kata umum yang sering keluar di soal Anda
+        // Jadi langsung diterjemahkan secara instan tanpa download file besar!
+        const customDict = {
+            "安全": "あんぜん",
+            "食品": "しょくひん",
+            "作": "つく",
+            "売": "う",
+            "会社": "かいしゃ",
+            "信用": "しんよう",
+            "病気": "びょうき",
+            "商品": "しょうみん",
+            "給料": "きゅうりょう",
+            "下": "さ",
+            "学校": "がっこう",
+            "行": "い"
+        };
+
+        // Fungsi otomatis mendeteksi kanji berdasarkan kamus mini instan
+        function autoFurigana(text) {
+            let result = text;
+            for (let kanji in customDict) {
+                let rubyTag = `<ruby>${kanji}<rt>${customDict[kanji]}</rt></ruby>`;
+                let regex = new RegExp(kanji, "g");
+                result = result.replace(regex, rubyTag);
+            }
+            return result;
+        }
+
         let currentQuestionIndex = 0;
         let score = 0;
 
-        const loadingBox = document.getElementById("loading");
-        const quizBox = document.getElementById("quiz");
         const questionContainer = document.getElementById("question-container");
         const optionsContainer = document.getElementById("options-container");
         const resultContainer = document.getElementById("result");
+        const quizBox = document.getElementById("quiz");
 
-        // Inisialisasi Kuroshiro saat halaman pertama kali dibuka
-        async function initKuroshiro() {
-            try {
-                await kuroshiro.init(new KuroshiroAnalyzerKuromoji());
-                loadingBox.classList.add("hidden");
-                quizBox.classList.remove("hidden");
-                loadQuiz();
-            } catch (error) {
-                loadingBox.innerHTML = "Gagal memuat sistem furigana. Pastikan terhubung ke internet saat pertama kali dibuka.";
-                console.error(error);
-            }
-        }
-
-        async function loadQuiz() {
+        function loadQuiz() {
             optionsContainer.innerHTML = "";
             const currentQuiz = quizData[currentQuestionIndex];
             
-            // Konversi teks pertanyaan otomatis jadi ada furigana
-            const parsedQuestion = await kuroshiro.convert(currentQuiz.question, { to: "hiragana", mode: "furigana" });
+            const parsedQuestion = autoFurigana(currentQuiz.question);
             questionContainer.innerHTML = `<div class="question">Pertanyaan ${currentQuestionIndex + 1} dari ${quizData.length}:<br><strong>${parsedQuestion}</strong></div>`;
 
-            // Konversi teks pilihan ganda otomatis
-            for (let i = 0; i < currentQuiz.options.length; i++) {
-                const parsedOption = await kuroshiro.convert(currentQuiz.options[i], { to: "hiragana", mode: "furigana" });
-                
+            currentQuiz.options.forEach((option, index) => {
+                const parsedOption = autoFurigana(option);
                 const label = document.createElement("label");
                 label.classList.add("option-label");
                 label.innerHTML = `
-                    <input type="radio" name="answer" value="${i}">
+                    <input type="radio" name="answer" value="${index}">
                     <span>${parsedOption}</span>
                 `;
                 optionsContainer.appendChild(label);
-            }
+            });
         }
 
-        async function nextQuestion() {
+        function nextQuestion() {
             const selectedOptions = document.querySelectorAll('input[name="answer"]:checked');
             
             if (selectedOptions.length === 0) {
@@ -89,7 +96,7 @@
             currentQuestionIndex++;
 
             if (currentQuestionIndex < quizData.length) {
-                await loadQuiz();
+                loadQuiz();
             } else {
                 quizBox.classList.add("hidden");
                 resultContainer.classList.remove("hidden");
@@ -97,8 +104,8 @@
             }
         }
 
-        // Jalankan inisialisasi
-        initKuroshiro();
+        // Langsung buka tanpa loading sama sekali!
+        loadQuiz();
     </script>
 
 </body>
