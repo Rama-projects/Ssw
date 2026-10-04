@@ -3,45 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kuis Bahasa Jepang - Dark Mode</title>
+    <title>Simulasi Ujian SSW Pengolahan Makanan</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="quiz-container">
-        <h2>Kuis Bahasa Jepang</h2>
-        
-        <div id="quiz">
+        <!-- Menu Pilih Sesi -->
+        <div id="session-menu">
+            <h2>Pilih Sesi Ujian SSW</h2>
+            <p style="text-align: center; color: #aaaaaa; margin-bottom: 20px;">Total 40 soal per sesi | Kelulusan Minimal: 98 dari 150</p>
+            <div class="session-grid" id="session-list"></div>
+        </div>
+
+        <!-- Tampilan Kuis -->
+        <div id="quiz-box" class="hidden">
+            <h3 id="session-title"></h3>
             <div id="question-container"></div>
             <div class="options" id="options-container"></div>
             <button class="btn" id="next-btn" onclick="nextQuestion()">Selanjutnya</button>
         </div>
 
-        <div id="result" class="result-container hidden"></div>
+        <!-- Tampilan Hasil -->
+        <div id="result-box" class="result-container hidden"></div>
     </div>
 
-    <!-- Memanggil data soal -->
+    <!-- PENTING: Panggil kamus.js dulu, baru soal.js -->
+    <script src="kamus.js"></script>
     <script src="soal.js"></script>
 
     <script>
-        // Kamus mini pintar bawaan untuk kata-kata umum yang sering keluar di soal Anda
-        // Jadi langsung diterjemahkan secara instan tanpa download file besar!
-        const customDict = {
-            "安全": "あんぜん",
-            "食品": "しょくひん",
-            "作": "つく",
-            "売": "う",
-            "会社": "かいしゃ",
-            "信用": "しんよう",
-            "病気": "びょうき",
-            "商品": "しょうみん",
-            "給料": "きゅうりょう",
-            "下": "さ",
-            "学校": "がっこう",
-            "行": "い"
-        };
+        let currentSessionKey = "";
+        let currentQuestions = [];
+        let currentQuestionIndex = 0;
+        let score = 0;
 
-        // Fungsi otomatis mendeteksi kanji berdasarkan kamus mini instan
+        const sessionMenu = document.getElementById("session-menu");
+        const sessionList = document.getElementById("session-list");
+        const quizBox = document.getElementById("quiz-box");
+        const sessionTitle = document.getElementById("session-title");
+        const questionContainer = document.getElementById("question-container");
+        const optionsContainer = document.getElementById("options-container");
+        const resultBox = document.getElementById("result-box");
+
+        function initMenu() {
+            sessionList.innerHTML = "";
+            for (let key in sessionsData) {
+                const btn = document.createElement("button");
+                btn.classList.add("session-btn");
+                btn.innerHTML = `${sessionsData[key].title} <br><small style="color: #888;">(${sessionsData[key].questions.length} Soal)</small>`;
+                btn.onclick = () => startSession(key);
+                sessionList.appendChild(btn);
+            }
+        }
+
+        function startSession(key) {
+            currentSessionKey = key;
+            currentQuestions = sessionsData[key].questions;
+            currentQuestionIndex = 0;
+            score = 0;
+
+            sessionMenu.classList.add("hidden");
+            quizBox.classList.remove("hidden");
+            sessionTitle.innerText = sessionsData[key].title;
+            
+            loadQuiz();
+        }
+
+        // Fungsi otomatis mendeteksi kanji menggunakan kamus terpisah (kamus.js)
         function autoFurigana(text) {
             let result = text;
             for (let kanji in customDict) {
@@ -52,20 +81,12 @@
             return result;
         }
 
-        let currentQuestionIndex = 0;
-        let score = 0;
-
-        const questionContainer = document.getElementById("question-container");
-        const optionsContainer = document.getElementById("options-container");
-        const resultContainer = document.getElementById("result");
-        const quizBox = document.getElementById("quiz");
-
         function loadQuiz() {
             optionsContainer.innerHTML = "";
-            const currentQuiz = quizData[currentQuestionIndex];
+            const currentQuiz = currentQuestions[currentQuestionIndex];
             
             const parsedQuestion = autoFurigana(currentQuiz.question);
-            questionContainer.innerHTML = `<div class="question">Pertanyaan ${currentQuestionIndex + 1} dari ${quizData.length}:<br><strong>${parsedQuestion}</strong></div>`;
+            questionContainer.innerHTML = `<div class="question">Soal ${currentQuestionIndex + 1} dari ${currentQuestions.length}:<br><strong>${parsedQuestion}</strong></div>`;
 
             currentQuiz.options.forEach((option, index) => {
                 const parsedOption = autoFurigana(option);
@@ -89,23 +110,40 @@
 
             const userAnswer = parseInt(selectedOptions[0].value);
 
-            if (userAnswer === quizData[currentQuestionIndex].answer) {
+            if (userAnswer === currentQuestions[currentQuestionIndex].answer) {
                 score++;
             }
 
             currentQuestionIndex++;
 
-            if (currentQuestionIndex < quizData.length) {
+            if (currentQuestionIndex < currentQuestions.length) {
                 loadQuiz();
             } else {
-                quizBox.classList.add("hidden");
-                resultContainer.classList.remove("hidden");
-                resultContainer.innerHTML = `Kuis Selesai! 🎉<br>Skor Anda: ${score} dari ${quizData.length}`;
+                showResult();
             }
         }
 
-        // Langsung buka tanpa loading sama sekali!
-        loadQuiz();
+        function showResult() {
+            quizBox.classList.add("hidden");
+            resultBox.classList.remove("hidden");
+
+            let totalSoal = currentQuestions.length;
+            let bobotPerSoal = 150 / totalSoal;
+            let finalScore = Math.round(score * bobotPerSoal);
+            let isPassed = finalScore >= 98;
+
+            resultBox.innerHTML = `
+                <h2>Hasil Ujian SSW</h2>
+                <p>Jawaban Benar: ${score} dari ${totalSoal} soal</p>
+                <p>Total Nilai Anda: <strong>${finalScore}</strong> / 150</p>
+                <p>Minimal Kelulusan: <strong>98</strong></p>
+                <p>Status: ${isPassed ? '<span class="badge-pass">LULUS (合格) 🎉</span>' : '<span class="badge-fail">TIDAK LULUS (不合格) ❌</span>'}</p>
+                <br>
+                <button class="btn" onclick="location.reload()">Kembali ke Menu Sesi</button>
+            `;
+        }
+
+        initMenu();
     </script>
 
 </body>
