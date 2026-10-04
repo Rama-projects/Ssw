@@ -9,10 +9,9 @@
 <body>
 
     <div class="quiz-container">
-        <!-- Menu Pilih Sesi -->
+        <!-- Menu Pilih Sesi (Tampilan Bersih / Hanya Judul & Tombol) -->
         <div id="session-menu">
-            <h2>Pilih Sesi Ujian SSW</h2>
-            <p style="text-align: center; color: #aaaaaa; margin-bottom: 20px;">Total 40 soal per sesi | Kelulusan Minimal: 98 dari 150</p>
+            <h2>Simulasi Ujian SSW Pengolahan Makanan</h2>
             <div class="session-grid" id="session-list"></div>
         </div>
 
@@ -20,14 +19,14 @@
         <div id="quiz-box" class="hidden">
             <div class="header-info">
                 <h3 id="session-title" style="margin:0; font-size: 1rem;"></h3>
-                <div class="timer" id="timer-display">⏱️ 30:00</div>
+                <div class="timer" id="timer-display">⏱️ 60:00</div>
             </div>
             <div id="question-container"></div>
             <div class="options" id="options-container"></div>
             <button class="btn" id="next-btn" onclick="nextQuestion()">Selanjutnya</button>
         </div>
 
-        <!-- Tombol Menuju Lihat Skor (Muncul setelah soal habis) -->
+        <!-- Tombol Menuju Lihat Skor -->
         <div id="score-prompt-box" class="hidden" style="text-align: center;">
             <h3>Ujian Selesai!</h3>
             <p style="color: #bbb; margin-bottom: 25px;">Anda telah menjawab semua soal dalam sesi ini. Silakan klik tombol di bawah untuk melihat hasil penilaian Anda.</p>
@@ -64,7 +63,7 @@
             for (let key in sessionsData) {
                 const btn = document.createElement("button");
                 btn.classList.add("session-btn");
-                btn.innerHTML = `${sessionsData[key].title} <br><small style="color: #888;">(${sessionsData[key].questions.length} Soal | Waktu: ${sessionsData[key].timeLimit / 60} Menit)</small>`;
+                btn.innerHTML = `${sessionsData[key].title} <br><small style="color: #888; font-weight: normal;">(${sessionsData[key].questions.length} Soal)</small>`;
                 btn.onclick = () => startSession(key);
                 sessionList.appendChild(btn);
             }
@@ -156,7 +155,7 @@
         function finishQuiz() {
             clearInterval(timerInterval);
             quizBox.classList.add("hidden");
-            scorePromptBox.classList.remove("hidden"); // Munculkan prompt tombol "Lihat Skor"
+            scorePromptBox.classList.remove("hidden");
         }
 
         function displayResult() {
@@ -168,7 +167,6 @@
             let finalScore = Math.round(score * bobotPerSoal);
             let isPassed = finalScore >= 98;
 
-            // Jika tidak lulus, teks nilai dan status otomatis berwarna merah
             let scoreColor = isPassed ? "#2ecc71" : "#e74c3c";
             let statusBadge = isPassed 
                 ? '<span class="badge-pass">LULUS (合格) 🎉</span>' 
