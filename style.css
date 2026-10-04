@@ -19,10 +19,35 @@ body {
     max-width: 650px;
 }
 
-h2 {
+h2, h3 {
     color: #ffffff;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+}
+
+.session-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.session-btn {
+    background-color: #2a2a2a;
+    color: #3498db;
+    border: 2px solid #3498db;
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+.session-btn:hover {
+    background-color: #3498db;
+    color: white;
 }
 
 .question {
@@ -32,7 +57,6 @@ h2 {
     line-height: 1.8;
 }
 
-/* Styling Furigana: Ukuran kecil, warna abu-abu terang */
 ruby {
     ruby-align: center;
 }
@@ -94,8 +118,19 @@ rt {
 
 .result-container {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.badge-pass {
     color: #2ecc71;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.badge-fail {
+    color: #e74c3c;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
