@@ -1,7 +1,8 @@
-// File khusus menampung daftar sesi dan ribuan soal ujian SSW
+// File khusus menampung daftar sesi dan soal ujian SSW
 const sessionsData = {
     "sesi1": {
         title: "Sesi 1: Bahan Kimia & Keamanan Produk (化学物質と安全性)",
+        timeLimit: 3600, // Waktu total sesi: 3600 detik = 60 Menit
         questions: [
             {
                 question: "安全ではない食品を作って、それが売られてしまうとどうなりますか。正しいものを一つ選びなさい",
@@ -26,6 +27,7 @@ const sessionsData = {
     },
     "sesi2": {
         title: "Sesi 2: Kebersihan & Sanitasi Kerja (衛生管理)",
+        timeLimit: 3600, // Waktu total sesi: 3600 detik = 60 Menit
         questions: [
             {
                 question: "作業を始める前に、必ずしなければならないことは何ですか。",
