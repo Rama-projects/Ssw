@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kuis Bahasa Jepang - Furigana</title>
-    <!-- Memanggil file CSS eksternal -->
+    <title>Kuis Bahasa Jepang - Kuroshiro Auto Furigana</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Memuat Kuroshiro Browser Bundle & Analyzer dari CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/kuroshiro-browser@latest/dist/kuroshiro.min.js"></script>
 </head>
 <body>
 
     <div class="quiz-container">
-        <h2>Kuis Bahasa Jepang (JLPT Style)</h2>
+        <h2>Kuis Bahasa Jepang</h2>
+        <div id="loading" class="loading-text">Sedang memuat sistem furigana otomatis... Mohon tunggu sebentar.</div>
         
-        <div id="quiz">
+        <div id="quiz" class="hidden">
             <div id="question-container"></div>
             <div class="options" id="options-container"></div>
             <button class="btn" id="next-btn" onclick="nextQuestion()">Selanjutnya</button>
@@ -21,38 +23,56 @@
         <div id="result" class="result-container hidden"></div>
     </div>
 
-    <!-- Memanggil file data soal terpisah -->
+    <!-- Memanggil data soal -->
     <script src="soal.js"></script>
 
-    <!-- Logika Kuis -->
     <script>
+        let kuroshiro = new Kuroshiro();
         let currentQuestionIndex = 0;
         let score = 0;
 
+        const loadingBox = document.getElementById("loading");
+        const quizBox = document.getElementById("quiz");
         const questionContainer = document.getElementById("question-container");
         const optionsContainer = document.getElementById("options-container");
-        const nextButton = document.getElementById("next-btn");
         const resultContainer = document.getElementById("result");
-        const quizBox = document.getElementById("quiz");
 
-        function loadQuiz() {
+        // Inisialisasi Kuroshiro saat halaman pertama kali dibuka
+        async function initKuroshiro() {
+            try {
+                await kuroshiro.init(new KuroshiroAnalyzerKuromoji());
+                loadingBox.classList.add("hidden");
+                quizBox.classList.remove("hidden");
+                loadQuiz();
+            } catch (error) {
+                loadingBox.innerHTML = "Gagal memuat sistem furigana. Pastikan terhubung ke internet saat pertama kali dibuka.";
+                console.error(error);
+            }
+        }
+
+        async function loadQuiz() {
             optionsContainer.innerHTML = "";
             const currentQuiz = quizData[currentQuestionIndex];
             
-            questionContainer.innerHTML = `<div class="question">Pertanyaan ${currentQuestionIndex + 1} dari ${quizData.length}:<br><strong>${currentQuiz.question}</strong></div>`;
+            // Konversi teks pertanyaan otomatis jadi ada furigana
+            const parsedQuestion = await kuroshiro.convert(currentQuiz.question, { to: "hiragana", mode: "furigana" });
+            questionContainer.innerHTML = `<div class="question">Pertanyaan ${currentQuestionIndex + 1} dari ${quizData.length}:<br><strong>${parsedQuestion}</strong></div>`;
 
-            currentQuiz.options.forEach((option, index) => {
+            // Konversi teks pilihan ganda otomatis
+            for (let i = 0; i < currentQuiz.options.length; i++) {
+                const parsedOption = await kuroshiro.convert(currentQuiz.options[i], { to: "hiragana", mode: "furigana" });
+                
                 const label = document.createElement("label");
                 label.classList.add("option-label");
                 label.innerHTML = `
-                    <input type="radio" name="answer" value="${index}">
-                    <span>${option}</span>
+                    <input type="radio" name="answer" value="${i}">
+                    <span>${parsedOption}</span>
                 `;
                 optionsContainer.appendChild(label);
-            });
+            }
         }
 
-        function nextQuestion() {
+        async function nextQuestion() {
             const selectedOptions = document.querySelectorAll('input[name="answer"]:checked');
             
             if (selectedOptions.length === 0) {
@@ -69,7 +89,7 @@
             currentQuestionIndex++;
 
             if (currentQuestionIndex < quizData.length) {
-                loadQuiz();
+                await loadQuiz();
             } else {
                 quizBox.classList.add("hidden");
                 resultContainer.classList.remove("hidden");
@@ -77,8 +97,8 @@
             }
         }
 
-        // Jalankan kuis saat pertama kali dibuka
-        loadQuiz();
+        // Jalankan inisialisasi
+        initKuroshiro();
     </script>
 
 </body>
