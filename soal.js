@@ -1,4 +1,4 @@
-// Tempat menampung ribuan soal Anda (Cukup ketik kanji biasa secara natural!)
+
 const quizData = [
     {
         question: "安全ではない食品を作って、それが売られてしまうとどうなりますか。正しいものを一つ選びなさい",
@@ -19,5 +19,4 @@ const quizData = [
         ],
         answer: 0
     }
-    // Anda bisa menambah ribuan soal di sini dengan mengetik teks Jepang biasa!
 ];
