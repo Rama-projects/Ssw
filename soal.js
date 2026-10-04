@@ -1,19 +1,13 @@
-// Tempat menampung ribuan soal kuis bahasa Jepang
 const quizData = [
     {
-        question: "Apa arti dari kata <ruby>学校<rt>がっこう</rt></ruby> ini?",
-        options: ["Rumah Sakit", "Sekolah", "Perpustakaan", "Toko Buku"],
-        answer: 1 
-    },
-    {
-        question: "Bagaimana cara membaca kanji <ruby>日本語<rt>にほんご</rt></ruby>?",
-        options: ["Nihonjin", "Nihongo", "Kankokugo", "Chuugokugo"],
-        answer: 1
-    },
-    {
-        question: "Pilihlah arti yang tepat untuk <ruby>先生<rt>せんせい</rt></ruby>:",
-        options: ["Dokter", "Murid", "Guru / Dosen", "Polisi"],
-        answer: 2
+        // Gunakan tag <ruby>Kanji<rt>Hiragana</rt></ruby> untuk bagian yang ber-kanji
+        question: "安全ではない<ruby>食品<rt>しょくひん</rt></ruby>を作って、それが売られてしまうとどうなりますか。正しいものを一つ選びなさい",
+        options: [
+            "<ruby>食品<rt>しょくひん</rt></ruby>を食べた人が病気になって、作った会社の<ruby>信用<rt>しんよう</rt></ruby>が落ちる.",
+            "<ruby>食品<rt>しょくひん</rt></ruby>を作った会社が有名になって、その会社の別の<ruby>商品<rt>しょうひん</rt></ruby>が売れる.",
+            "<ruby>食品<rt>しょくひん</rt></ruby>を作った人が病気になって、<ruby>給料<rt>きゅうりょう</rt></ruby>が下がる."
+        ],
+        answer: 0 // Jawaban yang benar adalah pilihan pertama (indeks ke-0)
     }
-    // Nanti Anda tinggal copy-paste format di atas dan menambahkannya hingga ribuan soal di sini!
+    // Tambahkan soal-soal berikutnya di sini...
 ];
