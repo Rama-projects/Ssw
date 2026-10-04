@@ -1,6 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6;
+    background-color: #121212; /* Latar belakang utama gelap */
+    color: #e0e0e0;            /* Warna teks terang agar mudah dibaca */
     margin: 0;
     padding: 20px;
     display: flex;
@@ -10,23 +11,23 @@ body {
 }
 
 .quiz-container {
-    background: #ffffff;
+    background: #1e1e1e;       /* Warna kotak kuis abu-abu gelap */
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     width: 100%;
     max-width: 650px;
 }
 
 h2 {
-    color: #333;
+    color: #ffffff;
     text-align: center;
     margin-bottom: 25px;
 }
 
 .loading-text {
     text-align: center;
-    color: #e67e22;
+    color: #f39c12;
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -34,17 +35,17 @@ h2 {
 .question {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    color: #2c3e50;
+    color: #ecf0f1;
     line-height: 1.8;
 }
 
-/* Styling Furigana Otomatis: Hitam keabuan, ukuran kecil */
+/* Styling Furigana di Dark Mode: Hitam keabuan lembut / abu terang */
 ruby {
     ruby-align: center;
 }
 rt {
     font-size: 0.6em;
-    color: #555555;
+    color: #aaaaaa;     /* Warna abu-abu terang agar kontras dan terbaca di latar gelap */
     font-weight: normal;
 }
 
@@ -58,25 +59,27 @@ rt {
 .option-label {
     display: flex;
     align-items: flex-start;
-    background: #f8f9fa;
-    border: 2px solid #e9ecef;
+    background: #2a2a2a;      /* Latar belakang pilihan jawaban agak terang dari container */
+    border: 2px solid #3d3d3d;  /* Border gelap */
     padding: 12px 15px;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.2s ease;
     font-size: 1.05rem;
     line-height: 1.6;
+    color: #e0e0e0;
 }
 
 .option-label:hover {
-    background: #e2e6ea;
-    border-color: #cbd3da;
+    background: #333333;
+    border-color: #555555;
 }
 
 .option-label input {
     margin-right: 12px;
     margin-top: 4px;
     transform: scale(1.2);
+    accent-color: #3498db;    /* Warna bulatan radio saat dipilih */
 }
 
 .btn {
@@ -89,6 +92,7 @@ rt {
     cursor: pointer;
     width: 100%;
     transition: background 0.2s;
+    font-weight: bold;
 }
 
 .btn:hover {
@@ -98,7 +102,7 @@ rt {
 .result-container {
     text-align: center;
     font-size: 1.3rem;
-    color: #27ae60;
+    color: #2ecc71;
     font-weight: bold;
 }
 
