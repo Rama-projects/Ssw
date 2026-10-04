@@ -18,17 +18,26 @@
 
         <!-- Tampilan Kuis -->
         <div id="quiz-box" class="hidden">
-            <h3 id="session-title"></h3>
+            <div class="header-info">
+                <h3 id="session-title" style="margin:0; font-size: 1rem;"></h3>
+                <div class="timer" id="timer-display">⏱️ 30:00</div>
+            </div>
             <div id="question-container"></div>
             <div class="options" id="options-container"></div>
             <button class="btn" id="next-btn" onclick="nextQuestion()">Selanjutnya</button>
         </div>
 
-        <!-- Tampilan Hasil -->
+        <!-- Tombol Menuju Lihat Skor (Muncul setelah soal habis) -->
+        <div id="score-prompt-box" class="hidden" style="text-align: center;">
+            <h3>Ujian Selesai!</h3>
+            <p style="color: #bbb; margin-bottom: 25px;">Anda telah menjawab semua soal dalam sesi ini. Silakan klik tombol di bawah untuk melihat hasil penilaian Anda.</p>
+            <button class="btn" onclick="displayResult()">Lihat Skor</button>
+        </div>
+
+        <!-- Tampilan Hasil Skor & Kelulusan -->
         <div id="result-box" class="result-container hidden"></div>
     </div>
 
-    <!-- PENTING: Panggil kamus.js dulu, baru soal.js -->
     <script src="kamus.js"></script>
     <script src="soal.js"></script>
 
@@ -37,6 +46,8 @@
         let currentQuestions = [];
         let currentQuestionIndex = 0;
         let score = 0;
+        let timerInterval;
+        let timeLeft = 0;
 
         const sessionMenu = document.getElementById("session-menu");
         const sessionList = document.getElementById("session-list");
@@ -44,14 +55,16 @@
         const sessionTitle = document.getElementById("session-title");
         const questionContainer = document.getElementById("question-container");
         const optionsContainer = document.getElementById("options-container");
+        const scorePromptBox = document.getElementById("score-prompt-box");
         const resultBox = document.getElementById("result-box");
+        const timerDisplay = document.getElementById("timer-display");
 
         function initMenu() {
             sessionList.innerHTML = "";
             for (let key in sessionsData) {
                 const btn = document.createElement("button");
                 btn.classList.add("session-btn");
-                btn.innerHTML = `${sessionsData[key].title} <br><small style="color: #888;">(${sessionsData[key].questions.length} Soal)</small>`;
+                btn.innerHTML = `${sessionsData[key].title} <br><small style="color: #888;">(${sessionsData[key].questions.length} Soal | Waktu: ${sessionsData[key].timeLimit / 60} Menit)</small>`;
                 btn.onclick = () => startSession(key);
                 sessionList.appendChild(btn);
             }
@@ -62,15 +75,32 @@
             currentQuestions = sessionsData[key].questions;
             currentQuestionIndex = 0;
             score = 0;
+            timeLeft = sessionsData[key].timeLimit;
 
             sessionMenu.classList.add("hidden");
             quizBox.classList.remove("hidden");
             sessionTitle.innerText = sessionsData[key].title;
             
+            startTimer();
             loadQuiz();
         }
 
-        // Fungsi otomatis mendeteksi kanji menggunakan kamus terpisah (kamus.js)
+        function startTimer() {
+            clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    alert("Waktu ujian telah habis!");
+                    finishQuiz();
+                } else {
+                    let minutes = Math.floor(timeLeft / 60);
+                    let seconds = timeLeft % 60;
+                    timerDisplay.innerText = `⏱️ ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                    timeLeft--;
+                }
+            }, 1000);
+        }
+
         function autoFurigana(text) {
             let result = text;
             for (let kanji in customDict) {
@@ -119,12 +149,18 @@
             if (currentQuestionIndex < currentQuestions.length) {
                 loadQuiz();
             } else {
-                showResult();
+                finishQuiz();
             }
         }
 
-        function showResult() {
+        function finishQuiz() {
+            clearInterval(timerInterval);
             quizBox.classList.add("hidden");
+            scorePromptBox.classList.remove("hidden"); // Munculkan prompt tombol "Lihat Skor"
+        }
+
+        function displayResult() {
+            scorePromptBox.classList.add("hidden");
             resultBox.classList.remove("hidden");
 
             let totalSoal = currentQuestions.length;
@@ -132,14 +168,22 @@
             let finalScore = Math.round(score * bobotPerSoal);
             let isPassed = finalScore >= 98;
 
+            // Jika tidak lulus, teks nilai dan status otomatis berwarna merah
+            let scoreColor = isPassed ? "#2ecc71" : "#e74c3c";
+            let statusBadge = isPassed 
+                ? '<span class="badge-pass">LULUS (合格) 🎉</span>' 
+                : '<span class="badge-fail">TIDAK LULUS (不合格) ❌</span>';
+
             resultBox.innerHTML = `
                 <h2>Hasil Ujian SSW</h2>
                 <p>Jawaban Benar: ${score} dari ${totalSoal} soal</p>
-                <p>Total Nilai Anda: <strong>${finalScore}</strong> / 150</p>
+                <p>Total Nilai Anda: <strong style="color: ${scoreColor}; font-size: 1.4rem;">${finalScore}</strong> / 150</p>
                 <p>Minimal Kelulusan: <strong>98</strong></p>
-                <p>Status: ${isPassed ? '<span class="badge-pass">LULUS (合格) 🎉</span>' : '<span class="badge-fail">TIDAK LULUS (不合格) ❌</span>'}</p>
+                <p>Status: ${statusBadge}</p>
                 <br>
-                <button class="btn" onclick="location.reload()">Kembali ke Menu Sesi</button>
+                <button class="btn home-btn" onclick="location.reload()">
+                    🏠 Kembali ke Menu Utama
+                </button>
             `;
         }
 
