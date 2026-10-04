@@ -1,7 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #121212; /* Latar belakang utama gelap */
-    color: #e0e0e0;            /* Warna teks terang agar mudah dibaca */
+    background-color: #121212;
+    color: #e0e0e0;
     margin: 0;
     padding: 20px;
     display: flex;
@@ -11,7 +11,7 @@ body {
 }
 
 .quiz-container {
-    background: #1e1e1e;       /* Warna kotak kuis abu-abu gelap */
+    background: #1e1e1e;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
@@ -25,13 +25,6 @@ h2 {
     margin-bottom: 25px;
 }
 
-.loading-text {
-    text-align: center;
-    color: #f39c12;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
 .question {
     font-size: 1.2rem;
     margin-bottom: 20px;
@@ -39,13 +32,13 @@ h2 {
     line-height: 1.8;
 }
 
-/* Styling Furigana di Dark Mode: Hitam keabuan lembut / abu terang */
+/* Styling Furigana: Ukuran kecil, warna abu-abu terang */
 ruby {
     ruby-align: center;
 }
 rt {
     font-size: 0.6em;
-    color: #aaaaaa;     /* Warna abu-abu terang agar kontras dan terbaca di latar gelap */
+    color: #aaaaaa;
     font-weight: normal;
 }
 
@@ -59,8 +52,8 @@ rt {
 .option-label {
     display: flex;
     align-items: flex-start;
-    background: #2a2a2a;      /* Latar belakang pilihan jawaban agak terang dari container */
-    border: 2px solid #3d3d3d;  /* Border gelap */
+    background: #2a2a2a;
+    border: 2px solid #3d3d3d;
     padding: 12px 15px;
     border-radius: 8px;
     cursor: pointer;
@@ -79,7 +72,7 @@ rt {
     margin-right: 12px;
     margin-top: 4px;
     transform: scale(1.2);
-    accent-color: #3498db;    /* Warna bulatan radio saat dipilih */
+    accent-color: #3498db;
 }
 
 .btn {
