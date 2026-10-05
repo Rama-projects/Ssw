@@ -68,18 +68,16 @@
     </div>
 
     <script src="soal.js"></script>
-<script src="soal-sesi3-4.js"></script>
-<script src="soal-sesi5-7.js"></script>
-
-    
+    <script src="soal-sesi3-4.js"></script>
+    <script src="soal-sesi5-7.js"></script>
 
     <script>
-function parseFurigana(text) {
-    if (!text) return "";
-    let parsed = text.replace(/([一-龯々〆ヵヶ]+)(?:\[(.*?)\])/g, '<ruby>$1<rt>$2</rt></ruby>');
-    parsed = parsed.replace(/([\u4e00-\u9faf]+)(?:\[(.*?)\])/g, '<ruby>$1<rt>$2</rt></ruby>');
-    return parsed;
-}
+        function parseFurigana(text) {
+            if (!text) return "";
+            let parsed = text.replace(/([一-龯々〆ヵヶ]+)(?:\[(.*?)\])/g, '<ruby>$1<rt>$2</rt></ruby>');
+            parsed = parsed.replace(/([\u4e00-\u9faf]+)(?:\[(.*?)\])/g, '<ruby>$1<rt>$2</rt></ruby>');
+            return parsed;
+        }
 
         let currentSessionKey = "";
         let currentQuestions = [];
@@ -149,7 +147,6 @@ function parseFurigana(text) {
             optionsContainer.innerHTML = "";
             const currentQuiz = currentQuestions[currentQuestionIndex];
             
-            // Otomatis parse furigana pada soal
             const parsedQuestion = parseFurigana(currentQuiz.question);
             
             if (currentQuestionIndex === 0) {
@@ -178,7 +175,6 @@ function parseFurigana(text) {
             `;
 
             currentQuiz.options.forEach((option, index) => {
-                // Otomatis parse furigana pada opsi jawaban
                 const parsedOption = parseFurigana(option);
                 
                 let optImageHTML = "";
@@ -271,12 +267,41 @@ function parseFurigana(text) {
                 ? '<span class="badge-pass">LULUS (合格) 🎉</span>' 
                 : '<span class="badge-fail">TIDAK LULUS (不合格) ❌</span>';
 
+            // Bagian Review Soal Memanjang ke Bawah
+            let reviewHTML = "<h3>Review Jawaban Anda:</h3><div class='review-container'>";
+
+            currentQuestions.forEach((q, index) => {
+                let userAns = userAnswers[index];
+                let correctAns = q.answer;
+                let isCorrect = (userAns === correctAns);
+
+                let userAnsText = (userAns !== undefined && userAns !== null) ? parseFurigana(q.options[userAns]) : "Tidak dijawab";
+                let correctAnsText = parseFurigana(q.options[correctAns]);
+                let parsedQText = parseFurigana(q.question);
+
+                let statusClass = isCorrect ? "correct" : "incorrect";
+                let statusText = isCorrect ? "✅ Benar" : "❌ Salah";
+
+                reviewHTML += `
+                    <div class="review-item ${statusClass}">
+                        <div class="review-question">Soal ${index + 1}: ${parsedQText}</div>
+                        <div class="review-answer"><b>Status:</b> ${statusText}</div>
+                        <div class="review-answer"><b>Jawaban Anda:</b> ${userAnsText}</div>
+                        ${!isCorrect ? `<div class="review-answer"><b>Jawaban yang Benar:</b> ${correctAnsText}</div>` : ""}
+                    </div>
+                `;
+            });
+
+            reviewHTML += "</div>";
+
             resultBox.innerHTML = `
                 <h2>Hasil Ujian SSW</h2>
                 <p>Jawaban Benar: ${score} dari ${totalSoal} soal</p>
                 <p>Total Nilai Anda: <strong style="color: ${scoreColor}; font-size: 1.4rem;">${finalScore}</strong> / 150</p>
                 <p>Minimal Kelulusan: <strong>98</strong></p>
                 <p>Status: ${statusBadge}</p>
+                <br>
+                ${reviewHTML}
                 <br>
                 <button class="btn home-btn" onclick="location.reload()">
                     🏠 Kembali ke Menu Utama
