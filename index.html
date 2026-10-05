@@ -68,7 +68,7 @@
         <div id="result-box" class="result-container hidden"></div>
     </div>
 
-    <script src="kamus.js"></script>
+    <!-- Kamus otomatis sudah dinonaktifkan / dihapus -->
     <script src="soal.js"></script>
 
     <script>
@@ -93,7 +93,6 @@
         const resultBox = document.getElementById("result-box");
         const timerDisplay = document.getElementById("timer-display");
 
-        // FUNGSI INI YANG SEBELUMNYA TIDAK ADA
         function initMenu() {
             sessionList.innerHTML = "";
             for (let key in sessionsData) {
@@ -137,20 +136,12 @@
             }, 1000);
         }
 
-        function autoFurigana(text) {
-            let result = text;
-            for (let kanji in customDict) {
-                let rubyTag = `<ruby>${kanji}<rt>${customDict[kanji]}</rt></ruby>`;
-                let regex = new RegExp(kanji, "g");
-                result = result.replace(regex, rubyTag);
-            }
-            return result;
-        }
-
         function loadQuiz() {
             optionsContainer.innerHTML = "";
             const currentQuiz = currentQuestions[currentQuestionIndex];
-            const parsedQuestion = autoFurigana(currentQuiz.question);
+            
+            // Langsung menggunakan teks soal karena tag <ruby> sudah dipasang manual di soal.js
+            const parsedQuestion = currentQuiz.question;
             
             if (currentQuestionIndex === 0) {
                 prevBtn.classList.add("hidden");
@@ -178,7 +169,8 @@
             `;
 
             currentQuiz.options.forEach((option, index) => {
-                const parsedOption = autoFurigana(option);
+                // Langsung menggunakan teks opsi apa adanya
+                const parsedOption = option;
                 
                 let optImageHTML = "";
                 if (currentQuiz.optionImages && currentQuiz.optionImages[index]) {
@@ -284,7 +276,6 @@
             `;
         }
 
-        // Panggil initMenu agar daftar sesi langsung muncul saat halaman dibuka
         initMenu();
     </script>
 
