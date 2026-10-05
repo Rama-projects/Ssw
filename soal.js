@@ -1,100 +1,100 @@
 const sessionsData = {
     "sesi1": {
         title: "Paket 1",
-        timeLimit: 3600, // 60 Menit
+        timeLimit: 3600,
         questions: [
             {
-                question: "<ruby>安<rt>あん</rt>全<rt>ぜん</rt></ruby><ruby>不<rt>ふ</rt>安<rt>あん</rt></ruby>定ではない<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>を<ruby>作<rt>つく</rt></ruby>って、それが<ruby>売<rt>う</rt></ruby>られてしまうとどうなりますか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "安全[あんぜん]不安定[ふあんてい]ではない食品[しょくひん]を作[つく]って、それが売[う]られてしまうとどうなりますか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べた<ruby>人<rt>ひと</rt></ruby>が<ruby>病<rt>びょう</rt>気<rt>き</rt></ruby>になって、<ruby>作<rt>つく</rt></ruby>った<ruby>会<rt>かい</rt>社<rt>しゃ</rt></ruby>の<ruby>信<rt>しん</rt>用<rt>よう</rt></ruby>が<ruby>落<rt>お</rt></ruby>ちる。",
-                    "<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>を<ruby>作<rt>つく</rt></ruby>った<ruby>会<rt>かい</rt>社<rt>しゃ</rt></ruby>が<ruby>有<rt>ゆう</rt>名<rt>めい</rt></ruby>になって、その<ruby>会<rt>かい</rt>社<rt>しゃ</rt></ruby>の<ruby>別<rt>べつ</rt></ruby>の<ruby>商<rt>しょう</rt>品<rt>ひん</rt></ruby>が<ruby>売<rt>う</rt></ruby>れる。",
-                    "<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>を<ruby>作<rt>つく</rt></ruby>った<ruby>人<rt>ひと</rt></ruby>が<ruby>病<rt>びょう</rt>気<rt>き</rt></ruby>になって、<ruby>給<rt>きゅう</rt>料<rt>りょう</rt></ruby>が<ruby>下<rt>さ</rt></ruby>がる。"
+                    "食品[しょくひん]を食べた人[ひと]が病気[びょうき]になって、作[つく]った会社[かいしゃ]の信用[しんよう]が落[お]ちる。",
+                    "食品[しょくひん]を作[つく]った会社[かいしゃ]が有名[ゆうめい]になって、その会社[かいしゃ]の別[べつ]の商品[しょうひん]が売[う]れる。",
+                    "食品[しょくひん]を作[つく]った人[ひと]が病気[びょうき]になって、給料[きゅうりょう]が下[さ]がる。"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>職<rt>しょく</rt>場<rt>ば</rt></ruby>に<ruby>行<rt>い</rt></ruby>く<ruby>前<rt>まえ</rt></ruby>に<ruby>体<rt>からだ</rt></ruby>の<ruby>調<rt>ちょう</rt>子<rt>し</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>い<ruby>時<rt>とき</rt></ruby>に、どうすれば<ruby>良<rt>よ</rt></ruby>いですか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "職場[しょくば]に行[い]く前[まえ]に体[からだ]の調子[ちょうし]が悪[わる]い時[とき]に、どうすれば良[よ]いですか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "どんな<ruby>体<rt>からだ</rt></ruby>の<ruby>調<rt>ちょう</rt>子<rt>し</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>くても、<ruby>職<rt>しょく</rt>場<rt>ば</rt></ruby>へ<ruby>行<rt>い</rt></ruby>く。",
-                    "<ruby>誰<rt>だれ</rt></ruby>でも<ruby>連<rt>れん</rt>絡<rt>らく</rt></ruby>しないで、<ruby>仕<rt>し</rt>事<rt>ごと</rt></ruby>を<ruby>休<rt>やす</rt></ruby>む。",
-                    "<ruby>職<rt>しょく</rt>場<rt>ば</rt></ruby>の<ruby>責<rt>せき</rt>任<rt>にん</rt>者<rt>しゃ</rt></ruby>に<ruby>連<rt>れん</rt>絡<rt>らく</rt></ruby>して、<ruby>仕<rt>し</rt>事<rt>ごと</rt></ruby>を<ruby>休<rt>やす</rt></ruby>む。"
+                    "どんな体[からだ]の調子[ちょうし]が悪[わる]くても、職場[しょくば]へ行[い]く。",
+                    "誰[だれ]でも連絡[れんらく]しないで、仕事[しごと]を休[やす]む。",
+                    "職場[しょくば]の責任者[せきにんしゃ]に連絡[れんらく]して、仕事[しごと]を休[やす]む。"
                 ],
                 answer: 2
             },
             {
-                question: "<ruby>機<rt>き</rt>械<rt>かい</rt></ruby>や<ruby>器<rt>き</rt>具<rt>ぐ</rt></ruby>を<ruby>洗<rt>せん</rt>浄<rt>じょう</rt></ruby>するときに、どのようにしますか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "機械[きかい]や器具[きぐ]を洗浄[せんじょう]するときに、どのようにしますか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>洗<rt>せん</rt>浄<rt>じょう</rt></ruby>する<ruby>部<rt>ぶ</rt>分<rt>ぶん</rt></ruby>を、<ruby>日<rt>ひ</rt></ruby>によって<ruby>変<rt>か</rt></ruby>える。",
-                    "<ruby>洗<rt>せん</rt>浄<rt>じょう</rt></ruby><ruby>剤<rt>ざい</rt></ruby>の<ruby>濃<rt>のう</rt>度<rt>ど</rt></ruby>を<ruby>確<rt>かく</rt>認<rt>にん</rt></ruby>する。",
-                    "<ruby>洗<rt>せん</rt>浄<rt>じょう</rt></ruby><ruby>剤<rt>ざい</rt></ruby>で<ruby>洗<rt>あら</rt></ruby>った<ruby>後<rt>あと</rt></ruby>、<ruby>洗<rt>あら</rt></ruby>い<ruby>流<rt>なが</rt></ruby>さずに<ruby>乾<rt>かわ</rt></ruby>かす。"
+                    "洗浄[せんじょう]する部分[ぶぶん]を、日[ひ]によって変[か]える。",
+                    "洗浄剤[せんじょうざい]の濃度[のうど]を確認[かくにん]する。",
+                    "洗浄剤[せんじょうざい]で洗[あら]った後[あと]、洗[あら]い流[なが]さずに乾[かわ]かす。"
                 ],
                 answer: 1
             },
             {
-                question: "<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>中<rt>ちゅう</rt></ruby>はどのような<ruby>態<rt>たい</rt>度<rt>ど</rt></ruby>がいいですか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "作業中[さぎょう中]はどのような態度[たいど]がいいですか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>製<rt>せい</rt>品<rt>ひん</rt></ruby>の<ruby>状<rt>じょう</rt>態<rt>たい</rt></ruby>や、<ruby>異<rt>い</rt></ruby><ruby>物<rt>ぶつ</rt></ruby>があるかどうか<ruby>注<rt>ちゅう</rt>意<rt>い</rt></ruby>する。",
-                    "<ruby>隣<rt>となり</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>とテレビの<ruby>話<rt>はな</rt></ruby>しながら<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby>する。",
-                    "<ruby>時<rt>じ</rt>間<rt>かん</rt></ruby>が<ruby>気<rt>き</rt></ruby>になるので、<ruby>何<rt>なん</rt></ruby><ruby>度<rt>ど</rt></ruby><ruby>時<rt>とき</rt></ruby><ruby>計<rt>けい</rt></ruby>を<ruby>見<rt>み</rt></ruby>る。"
+                    "製品[せいひん]の状態[じょうたい]や、異物[いぶつ]があるかどうか注意[ちゅうい]する。",
+                    "隣[となり]の人[ひと]とテレビの話[はな]しながら作業[さぎょう]する。",
+                    "時間[じかん]が気[き]になるので、何度[なんど]時計[とけい]を見[み]る。"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>中<rt>ちゅう</rt></ruby>の<ruby>衛<rt>えい</rt>生<rt>せい</rt></ruby><ruby>的<rt>てき</rt></ruby>な<ruby>行<rt>こう</rt>動<rt>どう</rt></ruby>として<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "作業中[さぎょうちゅう]の衛生的大[えいせいてき]な行動[こうどう]として正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "トイレの<ruby>後<rt>あと</rt></ruby>は、<ruby>洗<rt>せん</rt>剤<rt>ざい</rt></ruby>で<ruby>手<rt>て</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>って、<ruby>消<rt>しょう</rt>毒<rt>どく</rt></ruby><ruby>液<rt>えき</rt></ruby>で<ruby>消<rt>しょう</rt>毒<rt>どく</rt></ruby>する。",
-                    "<ruby>髪<rt>かみ</rt>の<ruby>毛<rt>け</rt></ruby>や<ruby>鼻<rt>はな</rt></ruby>を<ruby>触<rt>さわ</rt></ruby>った<ruby>後<rt>あと</rt></ruby>は、3<ruby>秒<rt>びょう</rt></ruby><ruby>待<rt>ま</rt></ruby>ってから<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby>する。",
-                    "<ruby>手<rt>て</rt></ruby>がぬれた<ruby>時<rt>とき</rt></ruby>は、<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>服<rt>ふく</rt></ruby>でふいて、<ruby>乾<rt>かわ</rt></ruby>いたのを<ruby>確<rt>かく</rt>認<rt>にん</rt></ruby>する。"
+                    "トイレの後[あと]は、洗剤[せんざい]で手[て]を洗[あら]って、消毒液[しょうどくえき]で消毒[しょうどく]する。",
+                    "髪[かみ]の毛[け]や鼻[はな]を触[さわ]った後[あと]は、3秒[びょう]待[ま]ってから作業[さぎょう]する。",
+                    "手[て]がぬれた時[とき]は、作業服[さぎょうふく]でふいて、乾[かわ]いたのを確認[かくにん]する。"
                 ],
                 answer: 0
             },
             {
-                question: "「5S<ruby>活<rt>かつ</rt>動<rt>どう</rt></ruby>」とは、<ruby>一<rt>いっ</rt>般<rt>ぱん</rt></ruby><ruby>衛<rt>えい</rt>生<rt>せい</rt></ruby><ruby>管<rt>かん</rt>理<rt>り</rt></ruby><ruby>者<rt>しゃ</rt></ruby>のための5つの<ruby>主<rt>しゅ</rt>要<rt>よう</rt></ruby>な<ruby>活<rt>かつ</rt>動<rt>どう</rt></ruby>のことです。「<ruby>整<rt>せい</rt>理<rt>り</rt></ruby>」「<ruby>整<rt>せい</rt>頓<rt>とん</rt></ruby>」「<ruby>清<rt>せい</rt>潔<rt>けつ</rt></ruby>」「<ruby>習<rt>しゅう</rt>慣<rt>かん</rt></ruby>」の<ruby>他<rt>ほか</rt></ruby>の1つは何ですか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "「5S活動[かつどう]」とは、一般衛生管理者[いっぱんえいせいかんりしゃ]のための5つの主要[しゅよう]な活動[かつどう]のことです。「整理[せいり]」「整頓[せいとん]」「清潔[せいけつ]」「習慣[しゅうかん]」の他[ほか]の1つは何ですか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>集<rt>しゅう</rt>中<rt>ちゅう</rt></ruby>",
-                    "<ruby>制<rt>せい</rt>作<rt>さく</rt></ruby>",
-                    "<ruby>清<rt>せい</rt>掃<rt>そう</rt></ruby>"
+                    "集中[しゅうちゅう]",
+                    "制作[せいさく]",
+                    "清掃[せいそう]"
                 ],
                 answer: 2
             },
             {
-                question: "5S<ruby>活<rt>かつ</rt>動<rt>どう</rt></ruby>の中の「<ruby>整<rt>せい</rt>頓<rt>とん</rt></ruby>」は、どのような<ruby>活<rt>かつ</rt>動<rt>どう</rt></ruby>ですか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "5S活動[かつどう]の中[なか]の「整頓[せいとん]」は、どのような活動[かつどう]ですか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>職<rt>しょく</rt>場<rt>ば</rt></ruby>や<ruby>工<rt>こう</rt>場<rt>じょう</rt></ruby>などのゴミを<ruby>捨<rt>す</rt></ruby>てる。",
-                    "<ruby>決<rt>き</rt></ruby>められたことを<ruby>常<rt>つね</rt></ruby>に<ruby>守<rt>まも</rt></ruby>って<ruby>実<rt>じっ</rt>行<rt>こう</rt></ruby>する。",
-                    "<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>道<rt>どう</rt>具<rt>ぐ</rt></ruby>や<ruby>材<rt>ざい</rt>料<rt>りょう</rt></ruby>の<ruby>置<rt>お</rt></ruby>き<ruby>場<rt>ば</rt></ruby><ruby>所<rt>しょ</rt></ruby>を<ruby>決<rt>き</rt></ruby>めておく。"
+                    "職場[しょくば]や工場[こうじょう]などのゴミを捨[す]てる。",
+                    "決[き]められたことを常[つね]に守[まも]って実行[じっこう]する。",
+                    "作業道具[さぎょうどうぐ]や材料[ざいりょう]の置[お]き場所[ばしょ]を決[き]めておく。"
                 ],
                 answer: 2
             },
             {
-                question: "ノロウイルスによる<ruby>食<rt>しょく</rt>中<rt>ちゅう</rt>毒<rt>どく</rt></ruby>の<ruby>主<rt>おも</rt></ruby>な<ruby>原<rt>げん</rt>因<rt>いん</rt></ruby>になる<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>は何ですか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "ノロウイルスによる食中毒[しょくちゅうどく]の主[おも]な原因[げんいん]になる食品[しょくひん]は何ですか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>米<rt>こめ</rt></ruby>、<ruby>麦<rt>むぎ</rt></ruby>、<ruby>豆<rt>まめ</rt></ruby>",
-                    "<ruby>卵<rt>たまご</rt></ruby>、<ruby>鶏<rt>とり</rt>肉<rt>にく</rt></ruby>",
-                    "<ruby>牡<rt>か</rt></ruby><ruby>蠣<rt>き</rt></ruby>などの<ruby>二<rt>に</rt>枚<rt>まい</rt></ruby><ruby>貝<rt>がい</rt></ruby>"
+                    "米[こめ]、麦[むぎ]、豆[まめ]",
+                    "卵[たまご]、鶏肉[とりにく]",
+                    "牡蠣[かき]などの二枚貝[にまいがい]"
                 ],
                 answer: 2
             },
             {
-                question: "<ruby>主<rt>おも</rt></ruby>な<ruby>原<rt>げん</rt>因<rt>いん</rt></ruby>になる<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>は<ruby>食<rt>しょく</rt>肉<rt>にく</rt></ruby>（<ruby>鶏<rt>とり</rt>肉<rt>にく</rt></ruby>）で、<ruby>感<rt>かん</rt>染<rt>せん</rt></ruby>すると、<ruby>下<rt>げ</rt>痢<rt>り</rt></ruby>、<ruby>腹<rt>ふく</rt>痛<rt>つう</rt></ruby>、<ruby>発<rt>はつ</rt>熱<rt>ねつ</rt></ruby>の<ruby>症<rt>しょう</rt>状<rt>じょう</rt></ruby>が<ruby>出<rt>で</rt></ruby>る<ruby>細<rt>さい</rt>菌<rt>きん</rt></ruby>はどれですか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "主[おも]な原因[げんいん]になる食品[しょくひん]は食肉[しょくにく]（鶏肉[とりにく]）で、感染[かんせん]すると、下痢[げり]、腹痛[ふくつう]、発熱[はつねつ]の症状[しょうじょう]が出[で]る細菌[さいきん]はどれですか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "カンピロバクター<ruby>属<rt>ぞく</rt></ruby><ruby>菌<rt>きん</rt></ruby>",
-                    "<ruby>腸<rt>ちょう</rt></ruby><ruby>炎<rt>えん</rt></ruby>ビブリオ",
-                    "ボツリヌス<ruby>菌<rt>きん</rt></ruby>"
+                    "カンピロバクター属菌[ぞくきん]",
+                    "腸炎[ちょうえん]ビブリオ",
+                    "ボツリヌス菌[きん]"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby><ruby>工<rt>こう</rt>場<rt>じょう</rt></ruby>で<ruby>食<rt>しょく</rt>中<rt>ちゅう</rt></ruby><ruby>毒<rt>どく</rt></ruby>を<ruby>予<rt>よ</rt>防<rt>ぼう</rt></ruby>するために<ruby>必<rt>ひつ</rt>要<rt>よう</rt></ruby>なことは何ですか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "食品工場[しょくひんこうじょう]で食中毒[しょくちゅうどく]を予防[よぼう]するために必[ひつ]要[よう]なことは何ですか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>器<rt>き</rt>具<rt>ぐ</rt></ruby>、<ruby>容<rt>よう</rt>器<rt>き</rt></ruby>、<ruby>装<rt>そう</rt>置<rt>ち</rt></ruby>などは、<ruby>常<rt>つね</rt></ruby>に<ruby>清<rt>せい</rt>潔<rt>けつ</rt></ruby>にする。",
-                    "<ruby>生<rt>なま</rt></ruby>の<ruby>牡<rt>か</rt></ruby><ruby>蠣<rt>き</rt></ruby>や<ruby>生<rt>なま</rt></ruby><ruby>肉<rt>にく</rt></ruby>は、<ruby>室<rt>しつ</rt>温<rt>おん</rt></ruby>で<ruby>保<rt>ほう</rt>管<rt>かん</rt></ruby>する。",
-                    "<ruby>加<rt>か</rt>熱<rt>ねつ</rt></ruby>した<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>は、できるだけゆっくり<ruby>冷<rt>ひ</rt></ruby>やす。"
+                    "器具[きぐ]、容器[ようき]、装置[そうち]などは、常[つね]に清潔[せいけつ]にする。",
+                    "生[なま]の牡蠣[かき]や生肉[なまにく]は、室温[しつおん]で保管[ほかん]する。",
+                    "加熱[かねつ]した食品[しょくひん]は、できるだけゆっくり冷[ひ]やす。"
                 ],
                 answer: 0
             },
             {
-                question: "多量の<ruby>微<rt>び</rt>生<rt>せい</rt></ruby><ruby>物<rt>ぶつ</rt></ruby>は何度で<ruby>急<rt>きゅう</rt></ruby>に<ruby>増<rt>ふ</rt></ruby>えますか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "多量[たりょう]の微生物[びせいぶつ]は何度[なんど]で急[きゅう]に増[ふ]えますか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
                     "30ºC-40ºC",
                     "60ºC-70ºC",
@@ -103,225 +103,225 @@ const sessionsData = {
                 answer: 0
             },
             {
-                question: "多くの<ruby>微<rt>び</rt>生<rt>せい</rt></ruby><ruby>物<rt>ぶつ</rt></ruby>を<ruby>殺<rt>ころ</rt></ruby>すためには、何度何<ruby>秒<rt>びょう</rt></ruby><ruby>間<rt>かん</rt></ruby><ruby>加<rt>か</rt>熱<rt>ねつ</rt></ruby>しますか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "多[おお]くの微生物[びせいぶつ]を殺[ころ]すためには、何度何秒間[なんびょうかん]加熱[かねつ]しますか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "75ºC-60<ruby>秒<rt>びょう</rt></ruby><ruby>間<rt>かん</rt></ruby>",
-                    "45ºC-90<ruby>秒<rt>びょう</rt></ruby><ruby>間<rt>かん</rt></ruby>",
-                    "55ºC-70<ruby>秒<rt>びょう</rt></ruby><ruby>間<rt>かん</rt></ruby>"
+                    "75ºC-60秒間[びょうかん]",
+                    "45ºC-90秒間[びょうかん]",
+                    "55ºC-70秒間[びょうかん]"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>微<rt>び</rt>生<rt>せい</rt></ruby><ruby>物<rt>ぶつ</rt></ruby>を<ruby>殺<rt>ころ</rt></ruby>すために<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>を<ruby>加<rt>か</rt>熱<rt>ねつ</rt></ruby>するときに、<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>のどこの<ruby>温<rt>おん</rt>度<rt>ど</rt></ruby>を<ruby>測<rt>はか</rt></ruby>りますか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "微生物[びせいぶつ]を殺[ころ]すために食品[しょくひん]を加熱[かねつ]するときに、食品[しょくひん]のどこの温度[おんど]を測[はか]りますか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>の<ruby>表<rt>ひょう</rt>面<rt>めん</rt></ruby>の<ruby>温<rt>おん</rt>度<rt>ど</rt></ruby>と<ruby>中<rt>ちゅう</rt>心<rt>しん</rt></ruby>の<ruby>温<rt>おん</rt>度<rt>ど</rt></ruby>の<ruby>平<rt>へい</rt>均<rt>きん</rt></ruby><ruby>値<rt>ち</rt></ruby>",
-                    "<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>の<ruby>中<rt>ちゅう</rt>心<rt>しん</rt></ruby>の<ruby>温<rt>おん</rt>度<rt>ど</rt></ruby>",
-                    "<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>の<ruby>表<rt>ひょう</rt>面<rt>めん</rt></ruby>の<ruby>温<rt>おん</rt>度<rt>ど</rt></ruby>"
+                    "食品[しょくひん]の表面[ひょうめん]の温度[おんど]と中心[ちゅうしん]の温度[おんど]の平均値[へいきんち]",
+                    "食品[しょくひん]の中心[ちゅうしん]の温度[おんど]",
+                    "食品[しょくひん]の表面[ひょうめん]の温度[おんど]"
                 ],
                 answer: 1
             },
             {
-                question: "主に石やガラスを<ruby>検<rt>けん</rt>出<rt>しゅつ</rt></ruby>する<ruby>機<rt>き</rt>械<rt>かい</rt></ruby>の<ruby>名<rt>な</rt>前<rt>まえ</rt></ruby>は何ですか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "主[おも]に石[いし]やガラスを検出[けんしゅつ]する機械[きかい]の名前[なまえ]は何ですか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "X<ruby>線<rt>せん</rt></ruby><ruby>異<rt>い</rt></ruby><ruby>物<rt>ぶつ</rt></ruby><ruby>検<rt>けん</rt>出<rt>しゅつ</rt></ruby><ruby>器<rt>き</rt></ruby>",
-                    "<ruby>金<rt>きん</rt>属<rt>ぞく</rt></ruby><ruby>検<rt>けん</rt>出<rt>しゅつ</rt></ruby><ruby>器<rt>き</rt></ruby>",
-                    "<ruby>自<rt>じ</rt>記<rt>き</rt></ruby><ruby>温<rt>おん</rt>度<rt>ど</rt></ruby><ruby>計<rt>けい</rt></ruby>"
+                    "X線異物検出器[せんいぶつけんしゅつき]",
+                    "金属検出器[きんぞくけんしゅつき]",
+                    "自記温度計[じきおんどけい]"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>日<rt>に</rt>本<rt>ほん</rt></ruby>の<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby><ruby>衛<rt>えい</rt>生<rt>せい</rt></ruby><ruby>法<rt>ほう</rt></ruby>では、<ruby>冷<rt>れい</rt>凍<rt>とう</rt></ruby><ruby>庫<rt>こ</rt></ruby>の<ruby>基<rt>き</rt>準<rt>じゅん</rt></ruby><ruby>温<rt>おん</rt>度<rt>ど</rt></ruby>は何度<ruby>以<rt>い</rt>か<rt>か</rt></ruby>ですか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "日本[にほん]の食品衛生法[しょくひんえいせいほう]では、冷凍庫[れいとうこ]の基準温度[きじゅんおんど]は何度以下[なんどいか]ですか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "－15ºC<ruby>以<rt>い</rt>か<rt>か</rt></ruby>",
-                    "－5ºC<ruby>以<rt>い</rt>か<rt>か</rt></ruby>",
-                    "－10ºC<ruby>以<rt>い</rt>か<rt>か</rt></ruby>"
+                    "－15ºC以下[いか]",
+                    "－5ºC以下[いか]",
+                    "－10ºC以下[いか]"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>容<rt>よう</rt>器<rt>き</rt></ruby><ruby>包<rt>ほう</rt>装<rt>そう</rt></ruby>された<ruby>加<rt>か</rt>工<rt>こう</rt></ruby><ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>で<ruby>表<rt>ひょう</rt>示<rt>じ</rt></ruby>しなければならないアレルギー<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>はどれですか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "容器包装[ようきほうそう]された加工食品[かこうしょくひん]で表示[ひょうじ]しなければならないアレルギー食品[しょくひん]はどれですか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>砂<rt>さ</rt>糖<rt>とう</rt></ruby>",
+                    "砂糖[さとう]",
                     "トウモロコシ",
-                    "<ruby>蕎<rt>そば</rt></ruby><ruby>麦<rt>むぎ</rt></ruby>"
+                    "蕎麦[そば]麦[むぎ]"
                 ],
                 answer: 2
             },
             {
-                question: "HACCPとは、<ruby>製<rt>せい</rt>品<rt>ひん</rt></ruby>の<ruby>安<rt>あん</rt>全<rt>ぜん</rt></ruby>のために、何をすることですか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "HACCPとは、製品[せいひん]の安全[あんぜん]のために、何をすることですか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>原<rt>げん</rt>材<rt>ざい</rt></ruby><ruby>料<rt>りょう</rt></ruby>の<ruby>受<rt>う</rt></ruby>け<ruby>入<rt>い</rt></ruby>れを<ruby>集<rt>しゅう</rt>中<rt>ちゅう</rt></ruby><ruby>力<rt>りょく</rt></ruby>に<ruby>管<rt>かん</rt>理<rt>り</rt></ruby>する",
-                    "<ruby>完<rt>かん</rt>成<rt>せい</rt></ruby>した<ruby>製<rt>せい</rt>品<rt>ひん</rt></ruby>を<ruby>検<rt>けん</rt>査<rt>さ</rt></ruby>する",
-                    "<ruby>危<rt>き</rt>険<rt>けん</rt></ruby><ruby>要<rt>よう</rt></ruby><ruby>因<rt>いん</rt></ruby>を<ruby>明<rt>めい</rt>確<rt>かく</rt></ruby>にして<ruby>重<rt>じゅう</rt>要<rt>よう</rt></ruby><ruby>点<rt>てん</rt></ruby>を<ruby>管<rt>かん</rt>理<rt>り</rt></ruby>する"
+                    "原材料[げんざいりょう]の受[う]け入[い]れを集中力[しゅうちゅうりょく]に管理[かんり]する",
+                    "完成[かんせい]した製品[せいひん]を検査[けんさ]する",
+                    "危険要因[きけんよういん]を明確[めかく]にして重要点[じゅうようてん]を管理[かんり]する"
                 ],
                 answer: 2
             },
             {
-                question: "<ruby>働<rt>はたら</rt></ruby>く<ruby>経<rt>けい</rt>験<rt>けん</rt></ruby>が<ruby>長<rt>なが</rt></ruby>い<ruby>人<rt>ひと</rt></ruby>よりも、<ruby>働<rt>はたら</rt></ruby>く<ruby>経<rt>けい</rt>験<rt>けん</rt></ruby>が<ruby>少<rt>すく</rt></ruby>ない<ruby>人<rt>ひと</rt></ruby>のほうが<ruby>労<rt>ろう</rt>働<rt>どう</rt></ruby><ruby>災<rt>さい</rt>害<rt>がい</rt></ruby>が多い<ruby>理<rt>り</rt>由<rt>ゆう</rt></ruby>は何ですか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "働[はたら]く経験[けいけん]が長[なが]い人[ひと]よりも、働[はたら]く経験[けいけん]が少[すく]ない人[ひと]のほうが労働災害[ろうどうさいがい]が多[おお]い理由[りゆう]は何ですか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>危<rt>き</rt>険<rt>けん</rt></ruby>な<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby>を<ruby>担<rt>たん</rt>当<rt>とう</rt></ruby>することが多い",
-                    "<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby>に<ruby>慣<rt>な</rt></ruby>れていないため、<ruby>危<rt>き</rt>険<rt>けん</rt></ruby>に<ruby>気<rt>き</rt></ruby>付<rt>づ</rt></ruby>きにくい",
-                    "<ruby>年<rt>ねん</rt>齢<rt>れい</rt></ruby>が<ruby>若<rt>わか</rt></ruby>く、<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>時<rt>じ</rt>間<rt>かん</rt></ruby>が<ruby>長<rt>なが</rt></ruby>い<ruby>人<rt>ひと</rt></ruby>が多い"
+                    "危険[きけん]な作業[さぎょう]を担当[たんとう]することが多[おお]い",
+                    "作業[さぎょう]に慣[な]れていないため、危険[きけん]に気付[きづ]きにくい",
+                    "年齢[ねんれい]が若[わか]く、作業時間[さぎょうじかん]が長[なが]い人[ひと]が多[おお]い"
                 ],
                 answer: 1
             },
             {
-                question: "<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>服<rt>ふく</rt></ruby>のどのような<ruby>点<rt>てん</rt></ruby>に<ruby>注<rt>ちゅう</rt>意<rt>い</rt></ruby>が<ruby>必<rt>ひつ</rt>要<rt>よう</rt></ruby>ですか。<ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "作業服[さぎょうふく]のどのような点[てん]に注意[ちゅうい]が必[ひつ]要[よう]ですか。間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "ロッカーの<ruby>中<rt>なか</rt></ruby>で、<ruby>汚<rt>よご</rt></ruby>れた<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>服<rt>ふく</rt></ruby>やきれいな<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>服<rt>ふく</rt></ruby>がくっつかないようにする",
-                    "ポケットやボタンのある<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>服<rt>ふく</rt></ruby>を<ruby>着<rt>き</rt></ruby>る",
-                    "<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>服<rt>ふく</rt></ruby>の<ruby>袖<rt>そde</rt>口<rt>ぐち</rt></ruby>は、<ruby>絞<rt>しぼ</rt></ruby>ったものをつかう"
+                    "ロッカーの中[なか]で、汚[よご]れた作業服[さぎょうふく]ときれいな作業服[さぎょうふく]がくっつかないようにする",
+                    "ポケットやボタンのある作業服[さぎょうふく]を着[き]る",
+                    "作業服[さぎょうふく]の袖口[そでぐち]は、絞[しぼ]ったものをつかう"
                 ],
                 answer: 1
             },
             {
-                question: "<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>場<rt>ば</rt></ruby>に<ruby>入<rt>い</rt></ruby>る<ruby>前<rt>まえ</rt></ruby>に、どんなことに<ruby>注<rt>ちゅう</rt>意<rt>い</rt></ruby>しますか。<ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "作業場[さぎょうば]に入[い]る前[まえ]に、どんなことに注意[ちゅうい]しますか。間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "トイレの<ruby>後<rt>あと</rt></ruby><ruby>手<rt>て</rt></ruby><ruby>洗<rt>あら</rt></ruby>いでは、<ruby>石<rt>せっ</rt>鹸<rt>けん</rt></ruby>だけ<ruby>使<rt>つか</rt></ruby>う",
-                    "<ruby>清<rt>せい</rt>潔<rt>けつ</rt></ruby>かどうか<ruby>確<rt>かく</rt>認<rt>にん</rt></ruby>してから<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>服<rt>ふく</rt></ruby>を<ruby>着<rt>き</rt></ruby>る",
-                    "<ruby>汚<rt>お</rt></ruby><ruby>染<rt>せん</rt></ruby><ruby>区<rt>く</rt></ruby>から<ruby>非<rt>ひ</rt></ruby><ruby>汚<rt>お</rt></ruby><ruby>染<rt>せん</rt></ruby><ruby>区<rt>く</rt></ruby>に<ruby>入<rt>い</rt></ruby>る<ruby>時<rt>とき</rt></ruby>は、<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>靴<rt>ぐつ</rt></ruby>を<ruby>消<rt>しょう</rt>毒<rt>どく</rt></ruby>する"
+                    "トイレの後[あと]手洗[てあら]いでは、石鹸[せっけん]だけ使[つか]う",
+                    "清潔[せいけつ]かどうか確認[かくにん]してから作業服[さぎょうふく]を着[き]る",
+                    "汚染区[おせんく]から非汚染区[ひおせんく]に入[い]る時[とき]は、作業靴[さぎょうぐつ]を消毒[しょうどく]する"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>中<rt>ちゅう</rt></ruby>の<ruby>行<rt>こう</rt>動<rt>どう</rt></ruby>について、<ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "作業中[さぎょうちゅう]の行動[こうどう]について、間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>危<rt>き</rt>険<rt>けん</rt></ruby>な<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby>をしている<ruby>人<rt>ひと</rt></ruby>を<ruby>見<rt>み</rt></ruby>たら、すぐ<ruby>声<rt>こえ</rt></ruby>をかける",
-                    "<ruby>危<rt>き</rt>険<rt>けん</rt></ruby>な<ruby>場<rt>ば</rt></ruby><ruby>所<rt>しょ</rt></ruby>を<ruby>見<rt>み</rt></ruby>つけたら、<ruby>責<rt>せき</rt>任<rt>にん</rt></ruby><ruby>者<rt>しゃ</rt></ruby>にすぐ<ruby>報<rt>ほう</rt>告<rt>こく</rt></ruby>する",
-                    "<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby>を<ruby>離<rt>はな</rt></ruby>れる<ruby>時<rt>じ</rt>間<rt>かん</rt></ruby>が<ruby>短<rt>みじか</rt></ruby>い<ruby>時<rt>とき</rt></ruby>は、<ruby>黙<rt>だま</rt></ruby>って<ruby>離<rt>はな</rt></ruby>れてもいい"
+                    "危険[きけん]な作業[さぎょう]をしている人[ひと]を見[み]たら、すぐ声[こえ]をかける",
+                    "危険[きけん]な場所[ばしょ]を見[み]つけたら、責任者[せきにんしゃ]にすぐ報告[ほうこく]する",
+                    "作業[さぎょう]を離[はな]れる時間[じかん]が短[みじか]い時[とき]は、黙[だま]って離[はな]れてもいい"
                 ],
                 answer: 2
             },
             {
-                question: "<ruby>製<rt>せい</rt>品<rt>ひん</rt></ruby>の<ruby>微<rt>び</rt>生<rt>せい</rt></ruby><ruby>物<rt>ぶつ</rt></ruby><ruby>検<rt>けん</rt>査<rt>さ</rt></ruby>について、<ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "製品[せいひん]の微生物検査[びせいぶつけんさ]について、間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "カンピロバクター<ruby>属<rt>ぞく</rt></ruby><ruby>菌<rt>きん</rt></ruby>の<ruby>検<rt>けん</rt>査<rt>さ</rt></ruby>は、<ruby>日<rt>に</rt>本<rt>ほん</rt></ruby>では<ruby>法<rt>ほう</rt>律<rt>りつ</rt></ruby>で<ruby>禁<rt>きん</rt>止<rt>し</rt></ruby>されている",
-                    "<ruby>法<rt>ほう</rt>律<rt>りつ</rt></ruby>で<ruby>決<rt>き</rt></ruby>められた<ruby>検<rt>けん</rt>査<rt>さ</rt></ruby><ruby>項<rt>こう</rt>目<rt>もく</rt></ruby>があれば、それに<ruby>従<rt>したが</rt></ruby>って<ruby>検<rt>けん</rt>査<rt>さ</rt></ruby>する",
-                    "<ruby>一<rt>いっ</rt>般<rt>ぱん</rt></ruby><ruby>的<rt>てき</rt></ruby>な<ruby>検<rt>けん</rt>査<rt>さ</rt></ruby><ruby>項<rt>こう</rt>目<rt>もく</rt></ruby>は、<ruby>一<rt>いっ</rt>般<rt>ぱん</rt></ruby><ruby>生<rt>せい</rt></ruby><ruby>菌<rt>きん</rt></ruby><ruby>数<rt>すう</rt></ruby>、<ruby>大<rt>だい</rt></ruby><ruby>腸<rt>ちょう</rt></ruby><ruby>菌<rt>きん</rt></ruby>、<ruby>大<rt>だい</rt></ruby><ruby>腸<rt>ちょう</rt></ruby><ruby>菌<rt>きん</rt></ruby><ruby>群<rt>ぐん</rt></ruby><ruby>菌<rt>きん</rt></ruby>などある"
+                    "カンピロバクター属菌[ぞくきん]の検査[けんさ]は、日本[にほん]では法律[ほうりつ]で禁止[きんし]されている",
+                    "法律[ほうりつ]で決[き]められた検査項目[けんさこうもく]があれば、それに従[したが]って検査[けんさ]する",
+                    "一般的[いっぱんてき]な検査項目[けんさこうもく]は、一般生菌数[いっぱんせいきんすう]、大腸菌[だいちょうきん]、大腸菌群菌[だいちょうきんぐんきん]などある"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>危<rt>き</rt>害<rt>がい</rt></ruby><ruby>要<rt>よう</rt></ruby><ruby>因<rt>いん</rt></ruby><ruby>分<rt>ぶん</rt></ruby><ruby>析<rt>せき</rt></ruby>について、<ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "危害要因分析[きがいよういんぶんせき]について、間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>危<rt>き</rt>害<rt>がい</rt></ruby>の<ruby>要<rt>よう</rt></ruby><ruby>因<rt>いん</rt></ruby>を、<ruby>全<rt>ぜん</rt>部<rt>ぶ</rt></ruby><ruby>書<rt>か</rt></ruby>いて、はっきりわかるようにする",
-                    "<ruby>危<rt>き</rt>害<rt>がい</rt></ruby><ruby>要<rt>よう</rt></ruby><ruby>因<rt>いん</rt></ruby><ruby>分<rt>ぶん</rt></ruby><ruby>析<rt>せき</rt></ruby>をするだけで、かならず<ruby>危<rt>き</rt>害<rt>がい</rt></ruby>が<ruby>起<rt>お</rt></ruby>きない",
-                    "<ruby>危<rt>き</rt>害<rt>がい</rt></ruby><ruby>要<rt>よう</rt></ruby><ruby>因<rt>いん</rt></ruby><ruby>分<rt>ぶん</rt></ruby><ruby>析<rt>せき</rt></ruby>をするときは、今まで<ruby>検<rt>けん</rt>査<rt>さ</rt></ruby><ruby>記<rt>き</rt>録<rt>ろく</rt></ruby>や<ruby>関<rt>かん</rt>連<rt>れん</rt></ruby>のある<ruby>本<rt>ほん</rt></ruby>なども<ruby>見<rt>み</rt></ruby>ている"
+                    "危害[きがい]の要因[よういん]を、全部[ぜんぶ]書[か]いて、はっきりわかるようにする",
+                    "危害要因分析[きがいよういんぶんせき]をするだけで、かならず危害[きがい]が起[お]きない",
+                    "危害要因分析[きがいよういんぶんせき]をするときは、今[いま]まで検査記録[けんさきろく]や関連[かんれん]のある本[ほん]なども見[み]ている"
                 ],
                 answer: 1
             },
             {
-                question: "アレルギー<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>がほかの<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>に<ruby>混<rt>ま</rt></ruby>ざってしまうことを「<ruby>交<rt>こう</rt>差<rt>さ</rt></ruby><ruby>汚<rt>お</rt></ruby><ruby>染<rt>せん</rt></ruby>」といいます。「<ruby>交<rt>こう</rt>差<rt>さ</rt></ruby><ruby>汚<rt>お</rt></ruby><ruby>染<rt>せん</rt></ruby>」を<ruby>防<rt>ふせ</rt></ruby>ぐために、何をしますか。<ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "アレルギー食品[しょくひん]がほかの食品[しょくひん]に混[ま]ざってしまうことを「交差汚染[こうさおせん]」といいます。「交差汚染[こうさおせん]」を防[ふせ]ぐために、何をしますか。間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "アレルギー<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>を<ruby>含<rt>ふく</rt></ruby>む<ruby>原<rt>げん</rt>材<rt>ざい</rt></ruby><ruby>料<rt>りょう</rt></ruby>と<ruby>含<rt>ふく</rt></ruby>まない<ruby>原<rt>げん</rt>材<rt>ざい</rt></ruby><ruby>料<rt>りょう</rt></ruby>を<ruby>同<rt>おな</rt></ruby>じラインで<ruby>製<rt>せい</rt>造<rt>ぞう</rt></ruby>する<ruby>場<rt>ば</rt>合<rt>あい</rt></ruby>、<ruby>徹<rt>てっ</rt>底<rt>てい</rt></ruby><ruby>的<rt>てき</rt></ruby>に<ruby>洗<rt>せん</rt>浄<rt>じょう</rt></ruby>する",
-                    "<ruby>特<rt>とく</rt>定<rt>てい</rt></ruby><ruby>原<rt>げん</rt>材<rt>ざい</rt></ruby><ruby>料<rt>りょう</rt></ruby>を<ruby>含<rt>ふく</rt></ruby>む<ruby>製<rt>せい</rt>品<rt>ひん</rt></ruby>は、一<ruby>日<rt>にち</rt></ruby>の<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby>の<ruby>最<rt>さい</rt></ruby><ruby>初<rt>しょ</rt></ruby>に<ruby>製<rt>せい</rt>造<rt>ぞう</rt></ruby>する",
-                    "アレルギー<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>を<ruby>含<rt>ふく</rt></ruby>む<ruby>原<rt>げん</rt>材<rt>ざい</rt></ruby><ruby>料<rt>りょう</rt></ruby>と、<ruby>含<rt>ふく</rt></ruby>まない<ruby>原<rt>げん</rt>材<rt>ざい</rt></ruby><ruby>料<rt>りょう</rt></ruby>を、<ruby>別<rt>べつ</rt></ruby>に<ruby>保<rt>ほう</rt>管<rt>かん</rt></ruby>する"
+                    "アレルギー食品[しょくひん]を含[ふ]む原材料[げんざいりょう]と含[ふく]まない原材料[げんざいりょう]を同[おな]じラインで製造[せいぞう]する場合[ばあい]、徹底的[てっていてき]に洗浄[せんじょう]する",
+                    "特定原材料[とくていげんざいりょう]を含[ふく]む製品[せいひん]は、一日[いちにち]の作業[さぎょう]の最初[さいしょ]に製造[せいぞう]する",
+                    "アレルギー食品[しょくひん]を含[ふ]む原材料[げんざいりょう]と、含[ふく]まない原材料[げんざいりょう]を、別[べつ]に保管[ほかん]する"
                 ],
                 answer: 0
             },
             {
-                question: "HACCPの「7<ruby>原<rt>げん</rt>則<rt>そく</rt></ruby>」には、どんな<ruby>項<rt>こう</rt>目<rt>もく</rt></ruby>がありますか。<ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "HACCPの「7原則[げんそく]」には、どんな項目[こうもく]がありますか。間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>検<rt>けん</rt>証<rt>しょう</rt></ruby><ruby>方<rt>ほう</rt>法<rt>ほう</rt></ruby>の<ruby>設<rt>せっ</rt>定<rt>てい</rt></ruby>",
-                    "モニタリング<ruby>方<rt>ほう</rt>法<rt>ほう</rt></ruby>の<ruby>設<rt>せっ</rt>定<rt>てい</rt></ruby>",
-                    "<ruby>施<rt>し</rt>設<rt>せつ</rt></ruby><ruby>基<rt>き</rt>準<rt>じゅん</rt></ruby>の<ruby>設<rt>せっ</rt>定<rt>てい</rt></ruby>"
+                    "検証方法[けんしょうほうほう]の設定[せってい]",
+                    "モニタリング方法[ほうほう]の設定[せってい]",
+                    "施設基準[しせつきじゅん]の設定[せってい]"
                 ],
                 answer: 2
             },
             {
-                question: "「<ruby>危<rt>き</rt>険<rt>けん</rt></ruby><ruby>異<rt>い</rt></ruby><ruby>物<rt>ぶつ</rt></ruby>」にはどんなものがありますか。<ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "「危険異物[きけんいぶつ]」にはどんなものがありますか。間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>髪<rt>かみ</rt></ruby>の<ruby>毛<rt>け</rt></ruby>",
-                    "石",
+                    "髪[かみ]の毛[け]",
+                    "石[いし]",
                     "ガラス"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>保<rt>ほ</rt>護<rt>ご</rt></ruby><ruby>帽<rt>ぼう</rt></ruby>（ヘルメットなど）や<ruby>耳<rt>みみ</rt></ruby><ruby>栓<rt>せん</rt></ruby>、<ruby>安<rt>あん</rt>全<rt>ぜん</rt></ruby><ruby>靴<rt>ぐつ</rt></ruby>などは、<ruby>体<rt>からだ</rt></ruby>を<ruby>守<rt>まも</rt></ruby>る<ruby>保<rt>ほ</rt>護<rt>ご</rt></ruby><ruby>具<rt>ぐ</rt></ruby>と呼ばれます。<ruby>保<rt>ほ</rt>護<rt>ご</rt></ruby><ruby>具<rt>ぐ</rt></ruby>について、<ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "保護帽[ほごぼう]（ヘルメットなど）や耳栓[みみせん]、安全靴[あんぜんぐつ]などは、体[からだ]を守[まも]る保護具[ほごぐ]と呼ばれます。保護具[ほごぐ]について、間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>安<rt>あん</rt>全<rt>ぜん</rt></ruby><ruby>靴<rt>ぐつ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>に<ruby>空<rt>くう</rt>気<rt>き</rt></ruby>を入るため、<ruby>爪<rt>つま</rt>先<rt>さき</rt></ruby>に<ruby>小<rt>ちい</rt></ruby>さな<ruby>穴<rt>あな</rt></ruby>をあけておく",
-                    "<ruby>化<rt>か</rt>学<rt>がく</rt></ruby><ruby>物<rt>ぶつ</rt></ruby><ruby>質<rt>しつ</rt></ruby>や<ruby>薬<rt>やく</rt><rt>ざい</rt></ruby>を使う時は、<ruby>保<rt>ほ</rt>護<rt>ご</rt></ruby>メガネや<ruby>手<rt>て</rt></ruby><ruby>袋<rt>ぶくろ</rt></ruby>をつける",
-                    "<ruby>保<rt>ほ</rt>護<rt>ご</rt></ruby><ruby>帽<rt>ぼう</rt></ruby>をかぶる<ruby>前<rt>まえ</rt></ruby>に、<ruby>傷<rt>きず</rt></ruby>がないかをチェックする"
+                    "安全靴[あんぜんぐつ]の中[なか]に空気[くうき]を入[い]るため、爪先[つまさき]に小[ちい]さな穴[あな]をあけておく",
+                    "化学物質[かがくぶっしつ]や薬剤[やくざい]を使[つか]う時[とき]は、保護[ほご]メガネや手袋[てぶくろ]をつける",
+                    "保護帽[ほごぼう]をかぶる前[まえ]に、傷[きず]がないかをチェックする"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>温<rt>おん</rt>度<rt>ど</rt></ruby>と<ruby>湿<rt>しつ</rt>度<rt>ど</rt></ruby>が高いところでは「<ruby>熱<rt>ねっ</rt>中<rt>ちゅう</rt></ruby><ruby>症<rt>しょう</rt></ruby>」の<ruby>危<rt>き</rt>険<rt>けん</rt></ruby>があります。<ruby>熱<rt>ねっ</rt>中<rt>ちゅう</rt></ruby><ruby>症<rt>しょう</rt></ruby>を<ruby>予<rt>よ</rt>防<rt>ぼう</rt></ruby>するために何をするとよいですか。<ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "温度[おんど]と湿度[しつど]が高[たか]いところでは「熱中症[ねっちゅうしょう]」の危険[きけん]があります。熱中症[ねっちゅうしょう]を予防[よぼう]するために何をするとよいですか。間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "こまめに<ruby>休<rt>きゅう</rt>憩<rt>けい</rt></ruby>をして、<ruby>水<rt>すい</rt>分<rt>ぶん</rt></ruby><ruby>補<rt>ほ</rt>給<rt>きゅう</rt></ruby>する",
-                    "<ruby>空<rt>くう</rt>気<rt>き</rt></ruby>を<ruby>通<rt>とお</rt></ruby>して、<ruby>汗<rt>あせ</rt></ruby>や<ruby>水<rt>すい</rt>分<rt>ぶん</rt></ruby>を<ruby>吸<rt>す</rt></ruby>って、<ruby>乾<rt>かわ</rt></ruby>きやすい<ruby>衣<rt>い</rt>服<rt>ふく</rt></ruby>を<ruby>着<rt>き</rt></ruby>る",
-                    "ストレッチを<ruby>中<rt>ちゅう</rt>心<rt>しん</rt></ruby>とした<ruby>予<rt>よ</rt>防<rt>ぼう</rt></ruby><ruby>体<rt>たい</rt>操<rt>そう</rt></ruby>をする"
+                    "こまめに休憩[きゅうけい]をして、水分補給[すいぶんほきゅう]する",
+                    "空気[くうき]を通[とお]して、汗[あせ]や水分[すいぶん]を吸[す]って、乾[かわ]きやすい衣服[いふく]を着[き]る",
+                    "ストレッチを中心[ちゅうしん]とした予防体操[よぼうたいそう]をする"
                 ],
                 answer: 2
             },
             {
-                question: "<ruby>機<rt>き</rt>械<rt>かい</rt></ruby><ruby>清<rt>せい</rt>掃<rt>そう</rt></ruby>のやり方について、<ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "機械清掃[きかいせいそう]のやり方[かた]について、間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>機<rt>き</rt>械<rt>かい</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>う時は、<ruby>水<rt>みず</rt></ruby>で<ruby>流<rt>なが</rt></ruby>すだけで<ruby>良<rt>よ</rt></ruby>い",
-                    "<ruby>機<rt>き</rt>械<rt>かい</rt></ruby>の<ruby>取<rt>と</rt></ruby>り<ruby>外<rt>はず</rt></ruby>せるところは、<ruby>外<rt>はず</rt></ruby>して<ruby>清<rt>せい</rt>掃<rt>そう</rt></ruby>する",
-                    "<ruby>清<rt>せい</rt>掃<rt>そう</rt></ruby>する時は、<ruby>機<rt>き</rt>械<rt>かい</rt></ruby>を<ruby>止<rt>と</rt></ruby>める"
+                    "機械[きかい]を洗[あら]う時[とき]は、水[みず]で流[なが]すだけで良[よ]い",
+                    "機械[きかい]の取[と]り外[はず]せるところは、外[はず]して清掃[せいそう]する",
+                    "清掃[せいそう]する時[とき]は、機械[きかい]を止[と]める"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>異<rt>い</rt>常<rt>じょう</rt></ruby><ruby>事<rt>じ</rt>態<rt>たい</rt></ruby>が起きた時に、どうしますか。<ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "異常事態[いじょうじたい]が起[お]きた時に、どうしますか。間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>誰<rt>だれ</rt></ruby>でも<ruby>相<rt>そう</rt>談<rt>だん</rt></ruby>しないで<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>場<rt>ば</rt></ruby>を<ruby>離<rt>はな</rt></ruby>れて、<ruby>安<rt>あん</rt>全<rt>ぜん</rt></ruby>な<ruby>場<rt>ば</rt></ruby><ruby>所<rt>しょ</rt></ruby>へ<ruby>避<rt>ひ</rt>難<rt>なん</rt></ruby>する",
-                    "<ruby>周<rt>まわ</rt></ruby>りにいる<ruby>責<rt>せき</rt>任<rt>にん</rt></ruby><ruby>者<rt>しゃ</rt></ruby>や<ruby>同<rt>どう</rt>僚<rt>りょう</rt></ruby>に、大<ruby>声<rt>こえ</rt></ruby>で知らせる",
-                    "<ruby>必<rt>ひつ</rt>要<rt>よう</rt></ruby>があれば、<ruby>非<rt>ひ</rt>常<rt>じょう</rt></ruby><ruby>停<rt>てい</rt>止<rt>し</rt></ruby>ボタンで<ruby>機<rt>き</rt>械<rt>かい</rt></ruby>を<ruby>止<rt>と</rt></ruby>める"
+                    "誰[だれ]でも相談[そうだん]しないで作業場[さぎょうば]を離[はな]れて、安全[あんぜん]な場所[ばしょ]へ避難[ひなん]する",
+                    "周[まわ]りにいる責任者[せきにんしゃ]や同僚[どうりょう]に、大声[おおごえ]で知らせる",
+                    "必要[ひつよう]があれば、非常停止[ひじょうていし]ボタンで機械[きかい]を止[と]める"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>場<rt>ば</rt></ruby>に<ruby>入<rt>い</rt></ruby>る時に、<ruby>粘<rt>ねん</rt>着<rt>ちゃく</rt></ruby>ローラーを使っています。何のために<ruby>粘<rt>ねん</rt>着<rt>ちゃく</rt></ruby>ローラーを使いますか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "作業場[さぎょうば]に入[い]る時[とき]に、粘着[ねんちゃく]ローラーを使[つか]っています。何のために粘着[ねんちゃく]ローラーを使[つか]いますか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "ほこりを<ruby>落<rt>お</rt></ruby>とす",
+                    "ほこりを落[お]とす",
                     "マッサージをする",
-                    "<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>服<rt>ふく</rt></ruby>を<ruby>冷<rt>ひ</rt></ruby>やす"
+                    "作業服[さぎょうふく]を冷[ひ]やす"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>手<rt>て</rt></ruby><ruby>洗<rt>あら</rt></ruby>いの<ruby>手<rt>て</rt></ruby><ruby>順<rt>じゅん</rt></ruby>について、下のには何が入りますか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "手洗[てあら]いの手順[てじゅん]について、下[した]のには何が入[はい]りますか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>消<rt>しょう</rt>毒<rt>どく</rt></ruby>（<ruby>消<rt>しょう</rt>毒<rt>どく</rt></ruby><ruby>液<rt>えき</rt></ruby>を使う）",
-                    "<ruby>保<rt>ほ</rt>湿<rt>しつ</rt></ruby>（クリームを<ruby>塗<rt>ぬ</rt></ruby>る）",
-                    "<ruby>乾<rt>かん</rt>燥<rt>そう</rt></ruby>（ドライヤーを使う）"
+                    "消毒[しょうどく]（消毒液[しょうどくえき]を使[つか]う）",
+                    "保湿[ほしつ]（クリームを塗[ぬ]る）",
+                    "乾燥[かんそう]（ドライヤーを使[つか]う）"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>脚<rt>きゃ</rt>立<rt>たつ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>り<ruby>天<rt>てん</rt>井<rt>じょう</rt></ruby><ruby>近<rt>ちか</rt></ruby>くのボルトを<ruby>締<rt>し</rt></ruby>めたとき、<ruby>脚<rt>きゃ</rt>立<rt>たつ</rt></ruby>から<ruby>落<rt>お</rt></ruby>ちそうになった。この<ruby>事<rt>じ</rt>故<rt>こ</rt></ruby>を<ruby>防<rt>ふせ</rt></ruby>ぐために、どうしたらいいですか。<ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "脚立[きゃたつ]に乗[の]り天井[てんじょう]近[ちか]くのボルトを締[し]めたとき、脚立[きゃたつ]から落[お]ちそうになった。この事故[じこ]を防[ふせ]ぐために、どうしたらいいですか。間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい。",
                 image: "images/kecelakaan_腳立.png",
                 options: [
-                    "<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>開<rt>かい</rt>始<rt>し</rt></ruby><ruby>前<rt>まえ</rt></ruby>に、レンチにすり<ruby>減<rt>へ</rt></ruby>りなどの<ruby>故<rt>こ</rt>障<rt>しょう</rt></ruby>がないか<ruby>確<rt>かく</rt>認<rt>にん</rt></ruby>すること",
-                    "レンチでボルトを<ruby>締<rt>し</rt></ruby>めるときの<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>位<rt>い</rt>置<rt>ち</rt></ruby>は、<ruby>安<rt>あん</rt>定<rt>てい</rt></ruby>な<ruby>姿<rt>し</rt>勢<rt>せい</rt></ruby>を<ruby>避<rt>さ</rt></ruby>けること",
-                    "<ruby>脚<rt>きゃ</rt>立<rt>たつ</rt></ruby>の<ruby>天<rt>てん</rt>板<rt>ばん</rt></ruby>には<ruby>立<rt>た</rt></ruby>てないこと"
+                    "作業開始前[さぎょうかいしまえ]に、レンチにすり減[へ]りなどの故障[こしょう]がないか確認[かくにん]すること",
+                    "レンチでボルトを締[し]めるときの作業位置[さぎょういち]は、安定[あんてい]な姿勢[しせい]を避[さ]けること",
+                    "脚立[きゃたつ]の天板[てんばん]には立[た]てないこと"
                 ],
                 answer: 1
             },
             {
-                question: "フレコンバッグをクレーンで<ruby>釣<rt>つ</rt>り<ruby>上<rt>あ</rt></ruby>げ、<ruby>荷<rt>に</rt>台<rt>だい</rt></ruby>から<ruby>降<rt>お</rt></ruby>ろそうとしたときにフレコンバッグが<ruby>揺<rt>ゆ</rt></ruby>れて<ruby>身<rt>しん</rt>体<rt>たい</rt></ruby>に<ruby>当<rt>あ</rt></ruby>たり、<ruby>荷<rt>に</rt>台<rt>だい</rt></ruby>から<ruby>落<rt>お</rt></ruby>ちそうになった。この<ruby>事<rt>じ</rt>故<rt>こ</rt></ruby>の<ruby>原<rt>げん</rt>因<rt>いん</rt></ruby>は何ですか。<ruby>最<rt>もっとも</rt></ruby><ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "フレコンバッグをクレーンで釣り上[つりあ]げ、荷台[にだい]から降[お]ろそうとしたときにフレコンバッグが揺[ゆ]れて身体[しんたい]に当[あ]たり、荷台[にだい]から落[お]ちそうになった。この事故[じこ]の原因[げんいん]は何ですか。最[もっと]も正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 image: "images/kecelakaan_クレーン.png",
                 options: [
-                    "クレーンを使う時の<ruby>自<rt>じ</rt>分<rt>ぶん</rt></ruby>の<ruby>立<rt>た</rt></ruby>つ<ruby>場<rt>ば</rt></ruby><ruby>所<rt>しょ</rt></ruby>を<ruby>十<rt>じゅう</rt>分<rt>ぶん</rt></ruby><ruby>理<rt>り</rt>解<rt>かい</rt></ruby>していなかったこと",
-                    "クレーンを使う時、フレコンバッグに<ruby>気<rt>き</rt></ruby><ruby>付<rt>づ</rt></ruby>きましたこと",
-                    "フレコンバッグをつり上げる<ruby>際<rt>さい</rt></ruby>、クレーンのワイヤーが<ruby>切<rt>き</rt></ruby>れていたこと"
+                    "クレーンを使[つか]う時[とき]の自分[じぶん]の立[た]つ場所[ばしょ]を十分[じゅうぶん]理解[りかい]していなかったこと",
+                    "クレーンを使[つか]う時、フレコンバッグに気付[きづ]きましたこと",
+                    "フレコンバッグをつり上[あ]げる際[さい]、クレーンのワイヤーが切[き]れていたこと"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>濃<rt>のう</rt>度<rt>ど</rt></ruby>10％の<ruby>次<rt>じ</rt>亜<rt>あ</rt>塩<rt>えん</rt></ruby><ruby>素<rt>そ</rt></ruby><ruby>酸<rt>さん</rt></ruby>ナトリウム（NaClO）<ruby>溶<rt>よう</rt></ruby><ruby>液<rt>えき</rt></ruby>があります。400ppmの<ruby>次<rt>じ</rt>亜<rt>あ</rt>塩<rt>えん</rt></ruby><ruby>素<rt>そ</rt></ruby><ruby>酸<rt>さん</rt></ruby>ナトリウム（NaClO）<ruby>溶<rt>よう</rt></ruby><ruby>液<rt>えき</rt></ruby>を1L<ruby>作<rt>つく</rt></ruby>る時に、この<ruby>溶<rt>よう</rt></ruby><ruby>液<rt>えき</rt></ruby>と<ruby>水<rt>みず</rt></ruby>はそれぞれ何ml<ruby>必<rt>ひつ</rt>要<rt>よう</rt></ruby>ですか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "濃度[のうど]10％の次亜塩素酸[じあえんそさん]ナトリウム（NaClO）溶液[ようえき]があります。400ppmの次亜塩素酸[じあえんそさん]ナトリウム（NaClO）溶液[ようえき]を1L作[つく]る時[とき]に、この溶液[ようえき]と水[みず]はそれぞれ何ml必要[ひつよう]ですか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>溶<rt>よう</rt></ruby><ruby>液<rt>えき</rt></ruby>4㎖、<ruby>水<rt>みず</rt></ruby>996㎖",
-                    "<ruby>溶<rt>よう</rt></ruby><ruby>液<rt>えき</rt></ruby>4㎖、<ruby>水<rt>みず</rt></ruby>1000㎖",
-                    "<ruby>溶<rt>よう</rt></ruby><ruby>液<rt>えき</rt></ruby>2㎖、<ruby>水<rt>みず</rt></ruby>998㎖"
+                    "溶液[ようえき]4㎖、水[みず]996㎖",
+                    "溶液[ようえき]4㎖、水[みず]1000㎖",
+                    "溶液[ようえき]2㎖、水[みず]998㎖"
                 ],
                 answer: 0
             },
             {
-                question: "以下は450ｇのうどんの<ruby>配<rt>はい</rt>合<rt>ごう</rt></ruby>です。同じ<ruby>配<rt>はい</rt>合<rt>ごう</rt></ruby>で<ruby>作<rt>つく</rt></ruby>る時に、<ruby>小<rt>こ</rt></ruby><ruby>麦<rt>むぎ</rt></ruby><ruby>粉<rt>こ</rt></ruby>10㎏あれば、うどんは何㎏できますか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。（<ruby>原<rt>げん</rt>料<rt>りょう</rt></ruby>：<ruby>量<rt>りょう</rt></ruby>）<ruby>小<rt>こ</rt></ruby><ruby>麦<rt>むぎ</rt></ruby><ruby>粉<rt>こ</rt></ruby>：300g、<ruby>食<rt>しょく</rt></ruby><ruby>塩<rt>えん</rt></ruby>：15g、<ruby>水<rt>みず</rt></ruby>：135g",
+                question: "以下[いか]は450ｇのうどんの配合[はいごう]です。同[おな]じ配合[はいごう]で作[つく]る時[とき]に、小麦粉[こむぎこ]10㎏あれば、うどんは何㎏できますか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。（原料[げんりょう]：量[りょう]）小麦粉[こむぎこ]：300g、食塩[しょくえん]：15g、水[みず]：135g",
                 options: [
                     "16㎏",
                     "15㎏",
@@ -330,42 +330,42 @@ const sessionsData = {
                 answer: 1
             },
             {
-                question: "<ruby>動<rt>うご</rt></ruby>いているベルトコンベアを<ruby>清<rt>せい</rt>掃<rt>そう</rt></ruby>していた時に、ぞうきんがベルトに<ruby>引<rt>ひ</rt></ruby>っかかって、<ruby>手<rt>て</rt></ruby>が<ruby>機<rt>き</rt>械<rt>かい</rt></ruby>に<ruby>巻<rt>ま</rt></ruby>き<ruby>込<rt>こ</rt></ruby>まれそうになりました。この<ruby>事<rt>じ</rt>故<rt>こ</rt></ruby>を<ruby>防<rt>ふせ</rt></ruby>ぐために、どうしたらいいですか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "動[うご]いているベルトコンベアを清掃[せいそう]していた時[とき]に、ぞうきんがベルトに引[ひ]っかかって、手[て]が機械[きかい]に巻[ま]き込[こ]まれそうになりました。この事故[じこ]を防[ふせ]ぐために、どうしたらいいですか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 image: "images/kecelakaan_ベルト.png",
                 options: [
-                    "近くでほかの人が見ている時に清掃する",
-                    "ぞうきんを使わずに清掃する",
-                    "機械を止めてから清掃する"
+                    "近[ちか]くでほかの人[ひと]が見[み]ている時[とき]に清掃[せいそう]する",
+                    "ぞうきんを使[つか]わずに清掃[せいそう]する",
+                    "機械[きかい]を止[と]めてから清掃[せいそう]する"
                 ],
                 answer: 2
             },
             {
-                question: "<ruby>冷<rt>れい</rt></ruby><ruby>凍<rt>とう</rt></ruby><ruby>庫<rt>こ</rt></ruby>の中で<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby>をしていた時、<ruby>床<rt>ゆか</rt></ruby>の<ruby>霜<rt>しも</rt></ruby>のために<ruby>足<rt>あし</rt></ruby>が<ruby>滑<rt>すべ</rt></ruby>って<ruby>転<rt>てん</rt></ruby><ruby>倒<rt>とう</rt></ruby>しました。この<ruby>事<rt>じ</rt>故<rt>こ</rt></ruby>を<ruby>防<rt>ふせ</rt></ruby>ぐために、どうしたらいいですか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "冷凍庫[れいとうこ]の中[なか]で作業[さぎょう]をしていた時[とき]、床[ゆか]の霜[しも]のために足[あし]が滑[すべ]って転倒[てんとう]しました。この事故[じこ]を防[ふせ]ぐために、どうしたらいいですか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 image: "images/kecelakaan_冷凍庫.png",
                 options: [
-                    "<ruby>滑<rt>すべ</rt></ruby>りにくい<ruby>靴<rt>くつ</rt></ruby>を<ruby>履<rt>は</rt></ruby>いて、<ruby>床<rt>ゆか</rt></ruby>の<ruby>霜<rt>しも</rt></ruby>や<ruby>水<rt>みず</rt></ruby><ruby>濡<rt>ぬ</rt></ruby>れに<ruby>注<rt>ちゅう</rt>意<rt>い</rt></ruby>する",
-                    "<ruby>冷<rt>れい</rt></ruby><ruby>凍<rt>とう</rt></ruby><ruby>庫<rt>こ</rt></ruby>の<ruby>温<rt>おん</rt>度<rt>ど</rt></ruby>を<ruby>上<rt>あ</rt></ruby>げて、<ruby>床<rt>ゆか</rt></ruby>の<ruby>霜<rt>しも</rt></ruby>を<ruby>取<rt>と</rt></ruby>る",
-                    "<ruby>霜<rt>しも</rt></ruby>や<ruby>水<rt>みず</rt></ruby><ruby>濡<rt>ぬ</rt></ruby>れを<ruby>踏<rt>ふ</rt></ruby>んで<ruby>滑<rt>すべ</rt></ruby>らないよう、大<ruby>股<rt>おおまた</rt></ruby>で<ruby>歩<rt>ある</rt></ruby>く"
+                    "滑[すべ]りにくい靴[くつ]を履[は]いて、床[ゆか]の霜[しも]や水濡[みずぬ]れに注意[ちゅうい]する",
+                    "冷凍庫[れいとうこ]の温度[おんど]を上[あ]げて、床[ゆか]の霜[しも]を取[と]る",
+                    "霜[しも]や水濡[みずぬ]れを踏[ふ]んで滑[すべ]らないよう、大股[おおまた]で歩[ある]く"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>機<rt>き</rt>械<rt>かい</rt></ruby>の<ruby>反<rt>はん</rt>対<rt>たい</rt></ruby><ruby>側<rt>がわ</rt></ruby>に行こうとして、ローラーコンベアの<ruby>上<rt>うえ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>ったために、転んでけがをしました。この<ruby>事<rt>じ</rt>故<rt>こ</rt></ruby>を<ruby>防<rt>ふせ</rt></ruby>ぐために、どうしたらいいですか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "機械[きかい]の反対側[はんたいがわ]に行[い]こうとして、ローラーコンベアの上[うえ]に乗[の]ったために、転[ころ]んでけがをしました。この事故[じこ]を防[ふせ]ぐために、どうしたらいいですか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 image: "images/kecelakaan_ローラー.png",
                 options: [
-                    "<ruby>機<rt>き</rt>械<rt>かい</rt></ruby>の<ruby>脇<rt>わき</rt></ruby>に<ruby>柵<rt>さく</rt></ruby>をつけて、うえに<ruby>乗<rt>の</rt></ruby>れないようにする",
-                    "ローラーコンベアの<ruby>上<rt>うえ</rt></ruby>にカバーをつけて、<ruby>歩<rt>ある</rt></ruby>きやすくする",
-                    "ローラーが<ruby>回<rt>かい</rt></ruby><ruby>転<rt>てん</rt></ruby>するように、ローラーを<ruby>固<rt>こ</rt>定<rt>てい</rt></ruby>する"
+                    "機械[きかい]の脇[わき]に柵[さく]をつけて、うえに乗[の]れないようにする",
+                    "ローラーコンベアの上[うえ]にカバーをつけて、歩[ある]きやすくする",
+                    "ローラーが回転[かいてん]するように、ローラーを固定[こてい]する"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>安<rt>あん</rt>全<rt>ぜん</rt></ruby>カバーのないスライサーで<ruby>肉<rt>にく</rt></ruby>を切っているとき、<ruby>回<rt>かい</rt></ruby><ruby>転<rt>てん</rt></ruby><ruby>刃<rt>は</rt></ruby>で<ruby>右<rt>みぎ</rt></ruby><ruby>手<rt>て</rt></ruby>を切りそうになりました。事故を防ぐには、安全カバーをつけるほかにどのような肉の持ち方がいいですか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "安全[あんぜん]カバーのないスライサーで肉[にく]を切[き]っているとき、回転刃[かいてんば]で右手[みぎて]を切[き]りそうになりました。事故[じこ]を防[ふせ]ぐには、安全[あんぜん]カバーをつけるほかにどのような肉[にく]の持[も]ち方がいいですか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 image: "images/kecelakaan_スライサー.png",
                 options: [
-                    "二人で持つ",
-                    "道具を使って持つ",
-                    "右手だけ持つ"
+                    "二人[ふたり]で持[も]つ",
+                    "道具[どうぐ]を使[つか]って持[も]つ",
+                    "右手[みぎて]だけ持[も]つ"
                 ],
                 answer: 1
             }
@@ -373,307 +373,307 @@ const sessionsData = {
     },
     "sesi2": {
         title: "Paket 2",
-        timeLimit: 3600, // 60 menit
+        timeLimit: 3600,
         questions: [
             {
-                question: "<ruby>一<rt>いっ</rt>般<rt>ぱん</rt></ruby><ruby>衛<rt>えい</rt>生<rt>せい</rt></ruby><ruby>管<rt>かん</rt>理<rt>り</rt></ruby>は3つに分かれます。<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>者<rt>しゃ</rt></ruby>の<ruby>衛<rt>えい</rt>生<rt>せい</rt></ruby><ruby>管<rt>かん</rt>理<rt>り</rt></ruby>と<ruby>原<rt>げん</rt>材<rt>ざい</rt></ruby><ruby>料<rt>りょう</rt></ruby>・<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>の<ruby>衛<rt>えい</rt>生<rt>せい</rt></ruby><ruby>管<rt>かん</rt>理<rt>り</rt></ruby>ともう1つはどれですか。",
+                question: "一般衛生管理[いっぱんえいせいかんり]は3つに分[わ]かれます。作業者[さぎょうしゃ]の衛生管理[えいせいかんり]と原材料[げんざいりょう]・食品[しょくひん]の衛生管理[えいせいかんり]ともう1つはどれですか。",
                 options: [
-                    "<ruby>環<rt>かん</rt>境<rt>きょう</rt></ruby><ruby>管<rt>かん</rt>理<rt>り</rt></ruby>。",
-                    "<ruby>施<rt>し</rt>設<rt>せつ</rt></ruby>、<ruby>設<rt>せつ</rt>備<rt>び</rt></ruby>、<ruby>器<rt>き</rt>具<rt>ぐ</rt></ruby>などの<ruby>衛<rt>えい</rt>生<rt>せい</rt></ruby><ruby>管<rt>かん</rt>理<rt>り</rt></ruby>",
-                    "<ruby>副<rt>ふく</rt></ruby><ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>管<rt>かん</rt>理<rt>り</rt></ruby>"
+                    "環境管理[かんきょうかんり]。",
+                    "施設[しせつ]、設備[せつび]、器具[きぐ]などの衛生管理[えいせいかんり]",
+                    "副作業管理[ふくさぎょうかんり]"
                 ],
                 answer: 1
             },
             {
-                question: "<ruby>牡<rt>か</rt></ruby><ruby>蠣<rt>き</rt></ruby>などの二<ruby>枚<rt>まい</rt></ruby><ruby>貝<rt>がい</rt></ruby>に<ruby>存<rt>そん</rt>在<rt>ざい</rt></ruby>し、十<ruby>分<rt>ぶん</rt></ruby><ruby>加<rt>か</rt>熱<rt>ねつ</rt></ruby>しないと<ruby>食<rt>しょく</rt>中<rt>ちゅう</rt></ruby><ruby>毒<rt>どく</rt></ruby>が<ruby>発<rt>はっ</rt>生<rt>せい</rt></ruby>しやすい<ruby>原<rt>げん</rt>因<rt>いん</rt></ruby>はどれか。<br><ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい",
+                question: "牡蠣[かき]などの二枚貝[にまいがい]に存在[そんざい]し、十分加熱[じゅうぶんかねつ]しないと食中毒[しょくちゅうどく]が発生[はっせい]しやすい原因[げんいん]はどれか。<br>正[ただ]しいものを一[ひと]つ選[えら]びなさい",
                 options: [
-                    "<ruby>黄<rt>おう</rt></ruby><ruby>色<rt>しょく</rt></ruby>ブドウ球<ruby>菌<rt>きゅうきん</rt></ruby>",
+                    "黄色[おうしょく]ブドウ球菌[きゅうきん]",
                     "ノロウイルス",
-                    "<ruby>大<rt>だい</rt></ruby><ruby>腸<rt>ちょう</rt></ruby><ruby>菌<rt>きん</rt></ruby>"
+                    "大腸菌[だいちょうきん]"
                 ],
                 answer: 1
             },
             {
-                question: "<ruby>微<rt>び</rt>生<rt>せい</rt></ruby><ruby>物<rt>ぶつ</rt></ruby>は<ruby>増<rt>ぞう</rt></ruby><ruby>殖<rt>しょく</rt></ruby>しにくい<ruby>環<rt>かん</rt>境<rt>きょう</rt></ruby>はどれか、<br><ruby>正<rt>ただ</rt></ruby>しくないものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "微生物[びせいぶつ]は増殖[ぞうしょく]しにくい環境[かんきょう]はどれか、<br>正[ただ]しくないものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "30℃～40℃<ruby>水<rt>すい</rt>分<rt>ぶん</rt></ruby>があり、<ruby>汚<rt>よご</rt></ruby>れがある<ruby>環<rt>かん</rt>境<rt>きょう</rt></ruby>",
-                    "<ruby>室<rt>しつ</rt>温<rt>おん</rt></ruby>で、<ruby>汚<rt>よご</rt></ruby>れがある<ruby>環<rt>かん</rt>境<rt>きょう</rt></ruby>",
-                    "4℃<ruby>以<rt>い</rt>か<rt>か</rt></ruby><ruby>乾<rt>かん</rt>燥<rt>そう</rt></ruby><ruby>汚<rt>よご</rt></ruby>れがない<ruby>環<rt>かん</rt>境<rt>きょう</rt></ruby>"
+                    "30℃～40℃水分[すいぶん]があり、汚[よご]れがある環境[かんきょう]",
+                    "室温[しつおん]で、汚[よご]れがある環境[かんきょう]",
+                    "4℃以下[いか]乾燥[かんそう]汚[よご]れがない環境[かんきょう]"
                 ],
                 answer: 2
             },
             {
-                question: "<ruby>飲<rt>いん</rt></ruby><ruby>料<rt>りょう</rt></ruby><ruby>製<rt>せい</rt>造<rt>ぞう</rt></ruby><ruby>業<rt>ぎょう</rt></ruby>は何を<ruby>製<rt>せい</rt>造<rt>ぞう</rt></ruby>することですか。<br><ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものをひとつ選びなさい...",
+                question: "飲料製造業[いんりょうせいぞうぎょう]は何を製造[せいぞう]することですか。<br>間[ま]違[ちが]っているものをひとつ選[えら]びなさい...",
                 options: [
                     "コーヒー。",
-                    "<ruby>冷<rt>れい</rt></ruby><ruby>凍<rt>とう</rt></ruby><ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>。",
+                    "冷凍食品[れいとうしょくひん]。",
                     "ジュース。"
                 ],
                 answer: 1
             },
             {
-                question: "<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>場<rt>ば</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る<ruby>前<rt>まえ</rt></ruby>に<ruby>行<rt>おこな</rt></ruby>う<ruby>流<rt>なが</rt></ruby>れとして、<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "作業場[さぎょうば]に入[はい]る前[まえ]に行[おこな]う流[なが]れとして、正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>服<rt>ふく</rt></ruby>を<ruby>正<rt>ただ</rt></ruby>しく<ruby>着<rt>ちゃく</rt>用<rt>よう</rt></ruby>、<ruby>手<rt>て</rt></ruby><ruby>洗<rt>あら</rt></ruby>い、<ruby>粘<rt>ねん</rt></ruby><ruby>着<rt>ちゃく</rt></ruby>ローラー、エアーシャワー",
-                    "<ruby>手<rt>て</rt></ruby><ruby>洗<rt>あら</rt></ruby>い、<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>服<rt>ふく</rt></ruby>を<ruby>正<rt>ただ</rt></ruby>しく<ruby>着<rt>ちゃく</rt>用<rt>よう</rt></ruby>、<ruby>粘<rt>ねん</rt></ruby><ruby>着<rt>ちゃく</rt></ruby>ローラー",
-                    "<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>服<rt>ふく</rt></ruby>を<ruby>正<rt>ただ</rt></ruby>しく<ruby>着<rt>ちゃく</rt>用<rt>よう</rt></ruby>ローラー、エアーシャワー、<ruby>手<rt>て</rt></ruby><ruby>洗<rt>あら</rt></ruby>い"
+                    "作業服[さぎょうふく]を正[ただ]しく着用[ちゃくよう]、手洗[てあら]い、粘着[ねんちゃく]ローラー、エアーシャワー",
+                    "手洗[てあら]い、作業服[さぎょうふく]を正[ただ]しく着用[ちゃくよう]、粘着[ねんちゃく]ローラー",
+                    "作業服[さぎょうふく]を正[ただ]しく着用[ちゃくよう]ローラー、エアーシャワー、手洗[てあら]い"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>中<rt>ちゅう</rt></ruby>について、<ruby>最<rt>もっと</rt></ruby>も<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "作業中[さぎょうちゅう]について、最[もっと]も正[ただ]しいものを選[えら]びなさい。",
                 options: [
-                    "<ruby>加<rt>か</rt>熱<rt>ねつ</rt></ruby>したものや<ruby>冷<rt>れい</rt>却<rt>きゃく</rt></ruby>したものを<ruby>長<rt>なが</rt></ruby>く<ruby>室<rt>しつ</rt>温<rt>おん</rt></ruby>で<ruby>放<rt>ほう</rt>置<rt>ち</rt></ruby>しても<ruby>大<rt>だい</rt></ruby>丈<rt>じょう</rt>夫<rt>ぶ</rt></ruby>",
-                    "トイレに<ruby>行<rt>い</rt></ruby>った<ruby>後<rt>あと</rt></ruby>、<ruby>洗<rt>せん</rt>剤<rt>ざい</rt></ruby>で<ruby>手<rt>て</rt></ruby><ruby>洗<rt>あら</rt></ruby>いします。<ruby>消<rt>しょう</rt>毒<rt>どく</rt></ruby><ruby>液<rt>えき</rt></ruby>しなくても<ruby>大<rt>だい</rt></ruby>丈<rt>じょう</rt>夫<rt>ぶ</rt></ruby>",
-                    "ムダ<ruby>話<rt>ばなし</rt></ruby>をしない。<ruby>機<rt>き</rt>械<rt>かい</rt></ruby>や<ruby>製<rt>せい</rt>品<rt>ひん</rt></ruby>の<ruby>異<rt>い</rt>常<rt>じょう</rt></ruby>が見つかった<ruby>時<rt>とき</rt></ruby>、<ruby>機<rt>き</rt>械<rt>かい</rt></ruby>ラインを<ruby>止<rt>と</rt></ruby>めて、すぐに<ruby>責<rt>せき</rt>任<rt>にん</rt></ruby><ruby>者<rt>しゃ</rt></ruby>に<ruby>報<rt>ほう</rt>告<rt>こく</rt></ruby>する"
+                    "加熱[かねつ]したものや冷却[れいきゃく]したものを長[なが]く室温[しつおん]で放置[ほうち]しても大丈夫[だいじょうぶ]",
+                    "トイレに行[い]った後[あと]、洗剤[せんざい]で手洗[てあら]いします。消毒液[しょうどくえき]しなくても大丈夫[だいじょうぶ]",
+                    "ムダ話[ばなし]をしない。機械[きかい]や製品[せいひん]の異常[いじょう]が見[み]つかった時[とき]、機械[きかい]ラインを止[と]めて、すぐに責任者[せきにんしゃ]に報告[ほうこく]する"
                 ],
                 answer: 2
             },
             {
-                question: "<ruby>衛<rt>えい</rt>生<rt>せい</rt></ruby>とは何ですか",
+                question: "衛生[えいせい]とは何ですか",
                 options: [
-                    "<ruby>命<rt>いのち</rt></ruby>を<ruby>守<rt>まも</rt></ruby>ることです",
-                    "<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べた<ruby>人<rt>ひと</rt></ruby>は<ruby>病<rt>びょう</rt>気<rt>き</rt></ruby>になること",
-                    "<ruby>病<rt>びょう</rt>気<rt>き</rt></ruby>になったりケガをしたりすること。"
+                    "命[いのち]を守[まも]ることです",
+                    "食品[しょくひん]を食べた人[ひと]は病気[びょうき]になること",
+                    "病気[びょうき]になったりケガをしたりすること。"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby><ruby>製<rt>せい</rt>造<rt>ぞう</rt></ruby>の<ruby>衛<rt>えい</rt>生<rt>せい</rt></ruby><ruby>管<rt>かん</rt>理<rt>り</rt></ruby>とは何を<ruby>管<rt>かん</rt>理<rt>り</rt></ruby>することですか。<br><ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい",
+                question: "食品製造[しょくひんせいぞう]の衛生管理[えいせいかんり]とは何を管理[かんり]することですか。<br>正[ただ]しいものを一[ひと]つ選[えら]びなさい",
                 options: [
-                    "<ruby>労<rt>ろう</rt>働<rt>どう</rt></ruby><ruby>安<rt>あん</rt>全<rt>ぜん</rt></ruby>の<ruby>管<rt>かん</rt>理<rt>り</rt></ruby>です",
-                    "<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>を<ruby>作<rt>つく</rt></ruby>る<ruby>管<rt>かん</rt>理<rt>り</rt></ruby>です。",
-                    "<ruby>消<rt>しょう</rt>費<rt>ひ</rt></ruby><ruby>者<rt>しゃ</rt></ruby>の<ruby>管<rt>かん</rt>理<rt>り</rt></ruby>です。"
+                    "労働安全[ろうどうあんぜん]の管理[かんり]です",
+                    "食品[しょくひん]を作[つく]る管理[かんり]です。",
+                    "消費者[しょうひしゃ]の管理[かんり]です。"
                 ],
                 answer: 1
             },
             {
-                question: "<ruby>金<rt>きん</rt>属<rt>ぞく</rt></ruby>以<ruby>外<rt>がい</rt></ruby>の<ruby>異<rt>い</rt></ruby><ruby>物<rt>ぶつ</rt></ruby>（石、ガラスなど）を見つけることができる<ruby>機<rt>き</rt>械<rt>かい</rt></ruby>として、<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい",
+                question: "金属以外[きんぞくいがい]の異物[いぶつ]（石、ガラスなど）を見[み]つけることができる機械[きかい]として、正[ただ]しいものを一[ひと]つ選[えら]びなさい",
                 options: [
-                    "<ruby>金<rt>きん</rt>属<rt>ぞく</rt></ruby><ruby>検<rt>けん</rt>査<rt>さ</rt></ruby><ruby>機<rt>き</rt></ruby>",
-                    "X<ruby>線<rt>せん</rt></ruby><ruby>異<rt>い</rt></ruby><ruby>物<rt>ぶつ</rt></ruby><ruby>検<rt>けん</rt>査<rt>さ</rt></ruby><ruby>機<rt>き</rt></ruby>",
-                    "<ruby>日<rt>ひ</rt></ruby><ruby>付<rt>づ</rt></ruby><ruby>検<rt>けん</rt>査<rt>さ</rt></ruby><ruby>機<rt>き</rt></ruby>"
+                    "金属検査機[きんぞくけんさき]",
+                    "X線異物検査機[せんいぶつけんさき]",
+                    "日付検査機[ひづけけんさき]"
                 ],
                 answer: 1
             },
             {
-                question: "<ruby>製<rt>せい</rt>品<rt>ひん</rt></ruby>の<ruby>保<rt>ほ</rt>管<rt>かん</rt></ruby><ruby>管<rt>かん</rt>理<rt>り</rt></ruby>について、<ruby>最<rt>もっと</rt></ruby>も<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "製品[せいひん]の保管管理[ほかんかんり]について、最[もっと]も正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>一<rt>いっ</rt>般<rt>ぱん</rt></ruby><ruby>的<rt>てき</rt></ruby>に<ruby>冷<rt>れい</rt>凍<rt>とう</rt></ruby><ruby>庫<rt>こ</rt></ruby>は-15℃<ruby>以<rt>い</rt>か<rt>か</rt></ruby>、<ruby>冷<rt>れい</rt>蔵<rt>ぞう</rt></ruby><ruby>庫<rt>こ</rt></ruby>は10℃<ruby>以<rt>い</rt>か<rt>か</rt></ruby>が<ruby>基<rt>き</rt>準<rt>じゅん</rt></ruby>となる。",
-                    "<ruby>保<rt>ほ</rt>管<rt>かん</rt></ruby><ruby>用<rt>よう</rt></ruby>サンプルを<ruby>適<rt>てき</rt></ruby><ruby>当<rt>とう</rt></ruby>に<ruby>抽<rt>ちゅう</rt></ruby><ruby>出<rt>しゅつ</rt></ruby>して<ruby>保<rt>ほ</rt>管<rt>かん</rt></ruby>する。",
-                    "<ruby>製<rt>せい</rt>品<rt>ひん</rt></ruby>の<ruby>微<rt>び</rt>生<rt>せい</rt></ruby><ruby>物<rt>ぶつ</rt></ruby><ruby>検<rt>けん</rt>査<rt>さ</rt></ruby><ruby>項<rt>こう</rt>目<rt>もく</rt></ruby>はそれぞれの<ruby>工<rt>こう</rt></ruby><ruby>場<rt>じょう</rt></ruby>で<ruby>決<rt>き</rt></ruby>まる。"
+                    "一般的[いっぱんてき]に冷凍庫[れいとうこ]は-15℃以下[いか]、冷蔵庫[れいぞうこ]は10℃以下[いか]が基準[きじゅん]となる。",
+                    "保管用[ほかんよう]サンプルを適当[てきとう]に抽出[ちゅうしゅつ]して保管[ほかん]する。",
+                    "製品[せいひん]の微生物検査項目[びせいぶつけんさこうもく]はそれぞれの工場[こうじょう]で決[き]まる。"
                 ],
                 answer: 0
             },
             {
-                question: "アレルギー<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>の<ruby>特<rt>とく</rt>定<rt>てい</rt></ruby><ruby>原<rt>げん</rt>材<rt>ざい</rt></ruby><ruby>料<rt>りょう</rt></ruby>として<ruby>表<rt>ひょう</rt>示<rt>じ</rt></ruby><ruby>義<rt>ぎ</rt>務<rt>む</rt></ruby>がある8つの<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>で<ruby>正<rt>ただ</rt></ruby>しいものはどれでしょうか。<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "アレルギー食品[しょくひん]の特定原材料[とくていげんざいりょう]として表示義務[ひょうじぎむ]がある8つの食品[しょくひん]で正[ただ]しいものはどれでしょうか。一[ひと]つ選[えら]びなさい。",
                 options: [
                     "そば、たまご、ピーナッツ、こむぎ、たまねぎ、えび、ぎゅうにく、くるみ",
-                    "えび、かに、<ruby>牡<rt>か</rt></ruby><ruby>蠣<rt>き</rt></ruby>、にんじん、ぎゅうにく、りんご、オレンジ、そば",
-                    "えび、かに、こむぎ、そば、たまご、<ruby>乳<rt>にゅう</rt></ruby>、<ruby>落<rt>らっ</rt>花<rt>か</rt>生<rt>せい</rt></ruby>、くるみ"
+                    "えび、かに、牡蠣[かき]、にんじん、ぎゅうにく、りんご、オレンジ、そば",
+                    "えび、かに、こむぎ、そば、たまご、乳[にゅう]、落花生[らっかせい]、くるみ"
                 ],
                 answer: 2
             },
             {
-                question: "ヒスタミンはどこにありますか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "ヒスタミンはどこにありますか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>果<rt>くだ</rt></ruby><ruby>物<rt>もの</rt></ruby>。",
-                    "<ruby>魚<rt>さかな</rt></ruby>",
-                    "<ruby>牛<rt>ぎゅう</rt></ruby><ruby>乳<rt>にゅう</rt></ruby>"
+                    "果物[くだもの]。",
+                    "魚[さかな]",
+                    "牛乳[ぎゅうにゅう]"
                 ],
                 answer: 1
             },
             {
-                question: "ヒスタミン<ruby>食<rt>しょく</rt>中<rt>ちゅう</rt></ruby><ruby>毒<rt>どく</rt></ruby>を<ruby>防<rt>ふせ</rt></ruby>ぐためにどうしたらいいのか<ruby>一<rt>ひと</rt></ruby>つ、<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>選<rt>えら</rt></ruby>んでください",
+                question: "ヒスタミン食中毒[しょくちゅうどく]を防[ふせ]ぐためにどうしたらいいのか一[ひと]つ、正[ただ]しいものを選[えら]んでください",
                 options: [
-                    "<ruby>魚<rt>さかな</rt></ruby>を取った<ruby>後<rt>あと</rt></ruby>ゆっくり<ruby>冷<rt>れい</rt></ruby><ruby>凍<rt>とう</rt></ruby>してもいいです。",
-                    "マグロやサバなどの<ruby>赤<rt>あか</rt></ruby><ruby>身<rt>み</rt></ruby><ruby>魚<rt>ざかな</rt></ruby>はどこでも<ruby>保<rt>ほ</rt>存<rt>ぞん</rt></ruby>できる",
-                    "<ruby>魚<rt>さかな</rt></ruby>を受<ruby>け<rt>う</rt></ruby><ruby>入<rt>い</rt></ruby>れたすぐ<ruby>冷<rt>れい</rt></ruby><ruby>凍<rt>とう</rt></ruby>したらいいです"
+                    "魚[さかな]を取[と]った後[あと]ゆっくり冷凍[れいとう]してもいいです。",
+                    "マグロやサバなどの赤身魚[あかみざかな]はどこでも保存[ほぞん]できる",
+                    "魚[さかな]を受[う]け入[い]れたすぐ冷凍[れいとう]したらいいです"
                 ],
                 answer: 2
             },
             {
-                question: "<ruby>冷<rt>れい</rt></ruby><ruby>却<rt>きゃく</rt></ruby><ruby>方<rt>ほう</rt>法<rt>ほう</rt></ruby>について、<ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい",
+                question: "冷却方法[れいきゃくほうほう]について、間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい",
                 options: [
-                    "<ruby>風<rt>ふう</rt></ruby><ruby>冷<rt>れい</rt></ruby>",
-                    "<ruby>冷<rt>れい</rt></ruby><ruby>蔵<rt>ぞう</rt></ruby><ruby>庫<rt>こ</rt></ruby>",
-                    "<ruby>水<rt>すい</rt></ruby><ruby>冷<rt>れい</rt></ruby>"
+                    "風冷[ふうれい]",
+                    "冷蔵庫[れいぞうこ]",
+                    "水冷[すいれい]"
                 ],
                 answer: 1
             },
             {
-                question: "<ruby>管<rt>かん</rt>理<rt>り</rt></ruby><ruby>基<rt>き</rt>準<rt>じゅん</rt></ruby>から<ruby>逸<rt>いつ</rt>脱<rt>だつ</rt></ruby>した場<ruby>合<rt>ばあい</rt></ruby>、<ruby>改<rt>かい</rt>善<rt>ぜん</rt></ruby><ruby>措<rt>そ</rt>置<rt>ち</rt></ruby>のため、なにをしなければなりませんか。<br><ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "管理基準[かんりきじゅん]から逸脱[いつだつ]した場[ば]合[あい]、改善措置[かいぜんそち]のため、なにをしなければなりませんか。<br>間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>に<ruby>危<rt>き</rt>害<rt>がい</rt></ruby><ruby>要<rt>よう</rt></ruby><ruby>因<rt>いん</rt></ruby>が<ruby>残<rt>のこ</rt></ruby>らないようにしなければなりません。",
-                    "<ruby>改<rt>かい</rt>善<rt>ぜん</rt></ruby><ruby>措<rt>そ</rt>置<rt>ち</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>うまでに、作った<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>を<ruby>捨<rt>す</rt></ruby>てるかつくり<ruby>直<rt>なお</rt></ruby>すかを<ruby>決<rt>き</rt></ruby>めなくてもいい。",
-                    "<ruby>改<rt>かい</rt>善<rt>ぜん</rt></ruby><ruby>措<rt>そ</rt>置<rt>ち</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>うときは、<ruby>必<rt>かなら</rt></ruby>ず<ruby>責<rt>せき</rt>任<rt>にん</rt></ruby><ruby>者<rt>しゃ</rt></ruby>の<ruby>指<rt>し</rt>示<rt>じ</rt></ruby>に<ruby>従<rt>したが</rt></ruby>ってください。"
+                    "食品[しょくひん]の中[なか]に危害要因[きけんよういん]が残[のこ]らないようにしなければなりません。",
+                    "改善措置[かいぜんそち]を行[おこな]うまでに、作[つく]った食品[しょくひん]を捨[す]てるかつくり直[なお]すかを決[き]めなくてもいい。",
+                    "改善措置[かいぜんそち]を行[おこな]うときは、必[かなら]ず責任者[せきにんしゃ]の指示[しじ]に従[したが]ってください。"
                 ],
                 answer: 1
             },
             {
-                question: "<ruby>微<rt>び</rt>生<rt>せい</rt></ruby><ruby>物<rt>ぶつ</rt></ruby>を<ruby>増<rt>ぞう</rt></ruby><ruby>殖<rt>しょく</rt></ruby>させないための<ruby>方<rt>ほう</rt>法<rt>ほう</rt></ruby>について、<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "微生物[びせいぶつ]を増殖[ぞうしょく]させないための方法[ほうほう]について、正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>冷<rt>れい</rt></ruby><ruby>蔵<rt>ぞう</rt></ruby><ruby>庫<rt>こ</rt></ruby>から取り<ruby>出<rt>だ</rt></ruby>した<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>は<ruby>常<rt>じょう</rt>温<rt>おん</rt></ruby>で<ruby>長<rt>なが</rt></ruby>く<ruby>放<rt>ほう</rt>置<rt>ち</rt></ruby>する。",
-                    "<ruby>加<rt>か</rt>熱<rt>ねつ</rt></ruby>したものを<ruby>室<rt>しつ</rt>温<rt>おん</rt></ruby>で<ruby>温<rt>おん</rt>度<rt>ど</rt></ruby>をゆっくり<ruby>下<rt>さ</rt></ruby>げる。",
-                    "<ruby>世<rt>せ</rt>代<rt>だい</rt></ruby><ruby>交<rt>こう</rt>代<rt>だい</rt></ruby><ruby>時<rt>じ</rt>間<rt>かん</rt></ruby>があるので、<ruby>時<rt>じ</rt>間<rt>かん</rt></ruby>もコントロールするのが<ruby>必<rt>ひつ</rt>要<rt>よう</rt></ruby>である。"
+                    "冷蔵庫[れいぞうこ]から取[と]り出[だ]した食品[しょくひん]は常温[じょうおん]で長[なが]く放置[ほうち]する。",
+                    "加熱[かねつ]したものを室温[しつおん]で温度[おんど]をゆっくり下[さ]げる。",
+                    "世代交代時間[せだいこうたいじかん]があるので、時間[じかん]もコントロールするのが必要[ひつよう]である。"
                 ],
                 answer: 2
             },
             {
-                question: "<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>着<rt>ぎ</rt></ruby>について、<ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "作業着[さぎょうぎ]について、間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>着<rt>ぎ</rt></ruby>は、いつも<ruby>清<rt>せい</rt>潔<rt>けつ</rt></ruby>なものを<ruby>着<rt>き</rt></ruby>なければならない。",
-                    "<ruby>清<rt>せい</rt>潔<rt>けつ</rt></ruby>な<ruby>服<rt>ふく</rt></ruby>なら、なにを<ruby>着<rt>き</rt></ruby>ても<ruby>良<rt>よ</rt></ruby>い。",
-                    "<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>着<rt>ぎ</rt></ruby>は、決められた<ruby>着<rt>き</rt></ruby>かたをしなければならない。"
+                    "作業着[さぎょうぎ]は、いつも清潔[せいけつ]なものを着[き]なければならない。",
+                    "清潔[せいけつ]な服[ふく]なら、なにを着[き]ても良[よ]い。",
+                    "作業着[さぎょうぎ]は、決[き]められた着[き]かたをしなければならない。"
                 ],
                 answer: 1
             },
             {
-                question: "<ruby>細<rt>さい</rt>菌<rt>きん</rt></ruby>が<ruby>原<rt>げん</rt>因<rt>いん</rt></ruby>の<ruby>食<rt>しょく</rt>中<rt>ちゅう</rt></ruby><ruby>毒<rt>どく</rt></ruby>を<ruby>発<rt>はっ</rt>生<rt>せい</rt></ruby>させないために<ruby>食<rt>しょく</rt>中<rt>ちゅう</rt></ruby><ruby>毒<rt>どく</rt></ruby><ruby>予<rt>よ</rt>防<rt>ぼう</rt></ruby>の<ruby>原<rt>げん</rt>則<rt>そく</rt></ruby>がいくつありますか。",
+                question: "細菌[さいきん]が原因[げんいん]の食中毒[しょくちゅうどく]を発生[はっせい]させないために食中毒予防[しょくちゅうどくよぼう]の原則[げんそく]がいくつありますか。",
                 options: [
-                    "7<ruby>原<rt>げん</rt>則<rt>そく</rt></ruby>",
-                    "4<ruby>原<rt>げん</rt>則<rt>そく</rt></ruby>",
-                    "3<ruby>原<rt>げん</rt>則<rt>そく</rt></ruby>"
+                    "7原則[げんそく]",
+                    "4原則[げんそく]",
+                    "3原則[げんそく]"
                 ],
                 answer: 2
             },
             {
-                question: "<ruby>手<rt>て</rt></ruby><ruby>袋<rt>ぶくろ</rt></ruby>をつける<ruby>理<rt>り</rt>由<rt>ゆう</rt></ruby>として、<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい",
+                question: "手袋[てぶくろ]をつける理由[りゆう]として、正[ただ]しいものを一[ひと]つ選[えら]びなさい",
                 options: [
-                    "<ruby>手<rt>て</rt></ruby>の<ruby>表<rt>ひょう</rt>面<rt>めん</rt></ruby>にいる<ruby>微<rt>び</rt>生<rt>せい</rt></ruby><ruby>物<rt>ぶつ</rt></ruby>が、<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>につかないようにするため。",
-                    "<ruby>手<rt>て</rt></ruby>が<ruby>汚<rt>よご</rt></ruby>れないようにするため。",
-                    "<ruby>手<rt>て</rt></ruby>が<ruby>冷<rt>つめ</rt></ruby>たくならないようにするため。"
+                    "手[て]の表面[ひょうめん]にいる微生物[びせいぶつ]が、食品[しょくひん]につかないようにするため。",
+                    "手[て]が汚[よご]れないようにするため。",
+                    "手[て]が冷[つめ]たくならないようにするため。"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>場<rt>ば</rt></ruby>に持っていってよいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい",
+                question: "作業場[さぎょうば]に持[も]っていってよいものを一[ひと]つ選[えら]びなさい",
                 options: [
-                    "<ruby>金<rt>きん</rt>銭<rt>せん</rt></ruby>やたばこ",
-                    "飴や<ruby>薬<rt>くすり</rt></ruby>",
-                    "ロッカー<ruby>鍵<rt>かぎ</rt></ruby>"
+                    "金銭[きんせん]やたばこ",
+                    "飴[あめ]や薬[くすり]",
+                    "ロッカー鍵[かぎ]"
                 ],
                 answer: 2
             },
             {
-                question: "<ruby>器<rt>き</rt>具<rt>ぐ</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>うとき使うものについて、<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "器具[きぐ]を洗[あら]うとき使[つか]うものについて、正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>殺<rt>さっ</rt>菌<rt>きん</rt></ruby><ruby>剤<rt>ざい</rt></ruby>を使って<ruby>洗<rt>あら</rt></ruby>う。",
-                    "アルコールを使って<ruby>洗<rt>あら</rt></ruby>う。",
-                    "<ruby>洗<rt>せん</rt>浄<rt>じょう</rt></ruby><ruby>剤<rt>ざい</rt></ruby>を使って<ruby>洗<rt>あら</rt></ruby>う。"
+                    "殺菌剤[さっきんざい]を使[つか]って洗[あら]う。",
+                    "アルコールを使[つか]って洗[あら]う。",
+                    "洗浄剤[せんじょうざい]を使[つか]って洗[あら]う。"
                 ],
                 answer: 2
             },
             {
-                question: "<ruby>殺<rt>さっ</rt>菌<rt>きん</rt></ruby><ruby>剤<rt>ざい</rt></ruby>を使って<ruby>調<rt>ちょう</rt>理<rt>り</rt></ruby><ruby>器<rt>き</rt>具<rt>ぐ</rt></ruby>を<ruby>消<rt>しょう</rt>毒<rt>どく</rt></ruby>する<ruby>方<rt>ほう</rt>法<rt>ほう</rt></ruby>として、<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "殺菌剤[さっきんざい]を使[つか]って調理器具[ちょうりきぐ]を消毒[しょうどく]する方法[ほうほう]として、正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>調<rt>ちょう</rt>理<rt>り</rt></ruby><ruby>器<rt>き</rt>具<rt>ぐ</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>う<ruby>前<rt>まえ</rt></ruby>に<ruby>消<rt>しょう</rt>毒<rt>どく</rt></ruby>する。",
-                    "<ruby>消<rt>しょう</rt>毒<rt>どく</rt></ruby>する<ruby>前<rt>まえ</rt></ruby>に<ruby>調<rt>ちょう</rt>理<rt>り</rt></ruby><ruby>器<rt>き</rt>具<rt>ぐ</rt></ruby>に<ruby>水<rt>みず</rt></ruby>をつける。",
-                    "<ruby>調<rt>ちょう</rt>理<rt>り</rt></ruby><ruby>器<rt>き</rt>具<rt>ぐ</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>って<ruby>乾<rt>かわ</rt></ruby>かしてから<ruby>消<rt>しょう</rt>毒<rt>どく</rt></ruby>する。"
+                    "調理器具[ちょうりきぐ]を洗[あら]う前[まえ]に消毒[しょうどく]する。",
+                    "消毒[しょうどく]する前[まえ]に調理器具[ちょうりきぐ]に水[みず]をつける。",
+                    "調理器具[ちょうりきぐ]を洗[あら]って乾[かわ]かしてから消毒[しょうどく]する。"
                 ],
                 answer: 2
             },
             {
-                question: "<ruby>殺<rt>さっ</rt>菌<rt>きん</rt></ruby>した<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>の<ruby>扱<rt>あつか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>について、<ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "殺菌[さっきん]した食品[しょくひん]の扱[あつか]い方[かた]について、間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>手<rt>て</rt></ruby><ruby>袋<rt>ぶくろ</rt></ruby>をつけていない<ruby>手<rt>て</rt></ruby>で<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>を持つ。",
-                    "<ruby>手<rt>て</rt></ruby><ruby>袋<rt>ぶくろ</rt></ruby>をつけた<ruby>手<rt>て</rt></ruby>で<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>を持つ。",
-                    "<ruby>消<rt>しょう</rt>毒<rt>どく</rt></ruby>した<ruby>道<rt>どう</rt>具<rt>ぐ</rt></ruby>を使って<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>を持つ。"
+                    "手袋[てぶくろ]をつけていない手[て]で食品[しょくひん]を持[も]つ。",
+                    "手袋[てぶくろ]をつけている手[て]で食品[しょくひん]を持[も]つ。",
+                    "消毒[しょうどく]した道具[どうぐ]を使[つか]って食品[しょくひん]を持[も]つ。"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>食<rt>しょく</rt>材<rt>ざい</rt></ruby>の<ruby>扱<rt>あつか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>について、<ruby>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "食材[しょくざい]の扱[あつか]い方[かた]について、違[ちが]っているものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>冷<rt>れい</rt></ruby><ruby>凍<rt>とう</rt></ruby><ruby>品<rt>ひん</rt></ruby>がとけていたら、また<ruby>冷<rt>れい</rt></ruby><ruby>凍<rt>とう</rt></ruby>する。",
-                    "<ruby>砂<rt>さ</rt>糖<rt>とう</rt></ruby>や<ruby>塩<rt>しお</rt></ruby>は、<ruby>温<rt>おん</rt>度<rt>ど</rt></ruby><ruby>湿<rt>しつ</rt>度<rt>ど</rt></ruby>が<ruby>低<rt>ひく</rt></ruby>いところに<ruby>保<rt>ほ</rt>管<rt>かん</rt></ruby>する。",
-                    "<ruby>小<rt>こ</rt></ruby><ruby>麦<rt>むぎ</rt></ruby><ruby>粉<rt>こ</rt></ruby>やでんぷんは、<ruby>水<rt>みず</rt></ruby>にぬれないように<ruby>保<rt>ほ</rt>管<rt>かん</rt></ruby>する。"
+                    "冷凍品[れいとうひん]がとけていたら、また冷凍[れいとう]する。",
+                    "砂糖[さとう]や塩[しお]は、温度湿度[おんどしつど]が低[ひく]いところに保管[ほかん]する。",
+                    "小麦粉[こむぎこ]やでんぷんは、水[みず]にぬれないように保管[ほかん]する。"
                 ],
                 answer: 0
             },
             {
-                question: "アレルギーがほかの<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>に混ざってしまうことを防ぐために、なにをしますか。<br><ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい",
+                question: "アレルギーがほかの食品[しょくひん]に混[ま]ざってしまうことを防[ふせ]ぐために、なにをしますか。<br>間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい",
                 options: [
-                    "<ruby>特<rt>とく</rt>定<rt>てい</rt></ruby><ruby>原<rt>げん</rt>材<rt>ざい</rt></ruby><ruby>料<rt>りょう</rt></ruby>を含み<ruby>製<rt>せい</rt>品<rt>ひん</rt></ruby>は一<ruby>日<rt>にち</rt></ruby>の<ruby>最<rt>さい</rt></ruby><ruby>初<rt>しょ</rt></ruby>に<ruby>製<rt>せい</rt>造<rt>ぞう</rt></ruby>する。",
-                    "アレルギー<ruby>物<rt>ぶっ</rt>質<rt>しつ</rt></ruby>を言ふくむ<ruby>原<rt>げん</rt>材<rt>ざい</rt></ruby><ruby>料<rt>りょう</rt></ruby>とアレルギー<ruby>物<rt>ぶっ</rt>質<rt>しつ</rt></ruby>を含まない<ruby>原<rt>げん</rt>材<rt>ざい</rt></ruby><ruby>料<rt>りょう</rt></ruby>と<ruby>別<rt>べつ</rt>々<rt>べつ</rt></ruby>に<ruby>保<rt>ほ</rt>管<rt>かん</rt></ruby>する。",
-                    "アレルギー<ruby>物<rt>ぶっ</rt>質<rt>しつ</rt></ruby>を<ruby>含<rt>ふく</rt></ruby>む<ruby>原<rt>げん</rt>材<rt>ざい</rt></ruby><ruby>料<rt>りょう</rt></ruby>とアレルギー<ruby>物<rt>ぶっ</rt>質<rt>しつ</rt></ruby>を<ruby>含<rt>ふく</rt></ruby>まない<ruby>材<rt>ざい</rt>料<rt>りょう</rt></ruby>を<ruby>同<rt>おな</rt></ruby>じラインで<ruby>製<rt>せい</rt>造<rt>ぞう</rt></ruby>する<ruby>場<rt>ば</rt>合<rt>あい</rt></ruby>、<ruby>徹<rt>てっ</rt>底<rt>てい</rt></ruby><ruby>的<rt>てき</rt></ruby>に<ruby>洗<rt>せん</rt>浄<rt>じょう</rt></ruby>する。"
+                    "特定原材料[とくていげんざいりょう]を含[ふく]み製品[せいひん]は一日[いちにち]の最初[さいしょ]に製造[せいぞう]する。",
+                    "アレルギー物質[ぶっしつ]を言[い]ふくむ原材料[げんざいりょう]とアレルギー物質[ぶっしつ]を含[ふく]まない原材料[げんざいりょう]と別[べつ]々[べつ]に保管[ほかん]する。",
+                    "アレルギー物質[ぶっしつ]を含[ふく]む原材料[げんざいりょう]とアレルギー物質[ぶっしつ]を含[ふく]まない材料[ざいりょう]を同[おな]じラインで製造[せいぞう]する場合[ばあい]、徹底的[てっていてき]に洗浄[せんじょう]する。"
                 ],
                 answer: 1
             },
             {
-                question: "<ruby>寄<rt>き</rt>生<rt>せい</rt></ruby><ruby>虫<rt>ちゅう</rt></ruby><ruby>生<rt>せい</rt></ruby><ruby>物<rt>ぶつ</rt></ruby>の<ruby>名<rt>な</rt>前<rt>まえ</rt></ruby>は何ですか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい",
+                question: "寄生虫生物[きせいちゅうせいぶつ]の名前[なまえ]は何ですか。正[ただ]しいものを一[ひと]つ選[えら]びなさい",
                 options: [
                     "おにぎり、サンドイッチ",
                     "サバ、イカ",
-                    "<ruby>人<rt>ひと</rt></ruby>の<ruby>皮<rt>ひ</rt>膚<rt>ふ</rt></ruby>や<ruby>傷<rt>きず</rt></ruby><ruby>口<rt>ぐち</rt></ruby>"
+                    "人[ひと]の皮膚[ひふ]や傷口[きずぐち]"
                 ],
                 answer: 1
             },
             {
-                question: "<ruby>殺<rt>さっ</rt>菌<rt>きん</rt></ruby><ruby>剤<rt>ざい</rt></ruby>の<ruby>扱<rt>あつか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>として、<ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい",
+                question: "殺菌剤[さっきんざい]の扱[あつか]い方[かた]として、間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい",
                 options: [
-                    "<ruby>殺<rt>さっ</rt>菌<rt>きん</rt></ruby><ruby>剤<rt>ざい</rt></ruby>は、どこで<ruby>保<rt>ほ</rt>管<rt>かん</rt></ruby>しても<ruby>良<rt>よ</rt></ruby>い。",
-                    "<ruby>殺<rt>さっ</rt>菌<rt>きん</rt></ruby><ruby>剤<rt>ざい</rt></ruby>を<ruby>容<rt>よう</rt>器<rt>き</rt></ruby>に移すときは、<ruby>必<rt>かなら</rt></ruby>ず移した<ruby>容<rt>よう</rt>器<rt>き</rt></ruby>に「<ruby>殺<rt>さっ</rt>菌<rt>きん</rt></ruby><ruby>剤<rt>ざい</rt></ruby>」と<ruby>表<rt>ひょう</rt>示<rt>じ</rt></ruby>する。",
-                    "<ruby>目<rt>め</rt></ruby>に<ruby>入<rt>はい</rt></ruby>らないようにする。"
+                    "殺菌剤[さっきんざい]は、どこで保管[ほかん]しても良[よ]い。",
+                    "殺菌剤[さっきんざい]を容器[ようき]に移[うつ]すときは、必[かなら]ず移[うつ]した容器[ようき]に「殺菌剤[さっきんざい]」と表示[ひょうじ]する。",
+                    "目[め]に入[はい]らないようにする。"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>手<rt>て</rt></ruby><ruby>洗<rt>あら</rt></ruby>いについて、<ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい",
+                question: "手洗[てあら]いについて、間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい",
                 options: [
-                    "<ruby>手<rt>て</rt></ruby>についた<ruby>汚<rt>よご</rt></ruby>れや<ruby>微<rt>び</rt>生<rt>せい</rt></ruby><ruby>物<rt>ぶつ</rt></ruby>をとるために<ruby>行<rt>おこな</rt></ruby>う。",
-                    "<ruby>爪<rt>つめ</rt></ruby>の中は洗わなくても<ruby>良<rt>よ</rt></ruby>い。",
-                    "<ruby>指<rt>ゆび</rt></ruby>の<ruby>間<rt>あいだ</rt></ruby>や<ruby>手<rt>て</rt></ruby><ruby>首<rt>くび</rt></ruby>までしっかり<ruby>洗<rt>あら</rt></ruby>う。"
+                    "手[て]についた汚れ[よごれ]や微生物[びせいぶつ]をとるために行[おこな]う。",
+                    "爪[つめ]の中[なか]は洗[あら]わなくても良[よ]い。",
+                    "指[ゆび]の間[あいだ]や手首[てくび]までしっかり洗[あら]う。"
                 ],
                 answer: 1
             },
             {
-                question: "<ruby>殺<rt>さっ</rt>菌<rt>きん</rt></ruby><ruby>剤<rt>ざい</rt></ruby>を使うときに<ruby>注<rt>ちゅう</rt>意<rt>い</rt></ruby>する<ruby>点<rt>てん</rt></ruby>について、<ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "殺菌剤[さっきんざい]を使[つか]うときに注意[ちゅうい]する点[てん]について、間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>殺<rt>さっ</rt>菌<rt>きん</rt></ruby><ruby>剤<rt>ざい</rt></ruby>の<ruby>濃<rt>のう</rt>度<rt>ど</rt></ruby>",
-                    "<ruby>殺<rt>さっ</rt>菌<rt>きん</rt></ruby>する<ruby>時<rt>じ</rt>間<rt>かん</rt></ruby>",
-                    "<ruby>殺<rt>さっ</rt>菌<rt>きん</rt></ruby><ruby>剤<rt>ざい</rt></ruby>の<ruby>温<rt>おん</rt>度<rt>ど</rt></ruby>"
+                    "殺菌剤[さっきんざい]の濃度[のうど]",
+                    "殺菌[さっきん]する時間[じかん]",
+                    "殺菌剤[さっきんざい]の温度[おんど]"
                 ],
                 answer: 2
             },
             {
-                question: "セレウス<ruby>菌<rt>きん</rt></ruby>による<ruby>食<rt>しょく</rt>中<rt>ちゅう</rt></ruby><ruby>毒<rt>どく</rt></ruby>の<ruby>原<rt>げん</rt>因<rt>いん</rt></ruby>となる<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>はどれですか",
+                question: "セレウス菌[きん]による食中毒[しょくちゅうどく]の原因[げんいん]となる食品[しょくひん]はどれですか",
                 options: [
-                    "<ruby>牡<rt>か</rt></ruby><ruby>蠣<rt>き</rt></ruby>などの二<ruby>枚<rt>まい</rt></ruby><ruby>貝<rt>がい</rt></ruby>",
-                    "<ruby>米<rt>こめ</rt></ruby>や<ruby>小<rt>こ</rt></ruby><ruby>麦<rt>むぎ</rt></ruby>などを使って<ruby>調<rt>ちょう</rt>理<rt>り</rt></ruby>された<ruby>食<rt>しょく</rt>品<rt>ひん</rt></ruby>",
-                    "<ruby>缶<rt>かん</rt>詰<rt>づめ</rt></ruby>"
+                    "牡蠣[かき]などの二枚貝[にまいがい]",
+                    "米[こめ]や小麦[こむぎ]などを使[つか]って調理[ちょうり]された食品[しょくひん]",
+                    "缶詰[かんづめ]"
                 ],
                 answer: 1
             },
             {
-                question: "<ruby>食<rt>しょく</rt>肉<rt>にく</rt></ruby>、<ruby>魚<rt>ぎょ</rt>介<rt>かい</rt></ruby><ruby>類<rt>るい</rt></ruby>は、何度以<ruby>か<rt>か</rt></ruby>で<ruby>保<rt>ほ</rt>管<rt>かん</rt></ruby>すればいいですか",
+                question: "食肉[しょくにく]、魚介類[ぎょかいるい]は、何度以下[なんどいか]で保管[ほかん]すればいいですか",
                 options: [
-                    "4℃<ruby>以<rt>い</rt>か<rt>か</rt></ruby>",
-                    "10℃<ruby>以<rt>い</rt>か<rt>か</rt></ruby>",
-                    "15℃<ruby>以<rt>い</rt>か<rt>か</rt></ruby>"
+                    "4℃以下[いか]",
+                    "10℃以下[いか]",
+                    "15℃以下[いか]"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>熱<rt>ねっ</rt>中<rt>ちゅう</rt></ruby><ruby>症<rt>しょう</rt></ruby>の<ruby>症<rt>しょう</rt>状<rt>じょう</rt></ruby>について、<ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "熱中症[ねっちゅうしょう]の症状[しょうじょう]について、間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "めまい、たちくらみ、<ruby>手<rt>て</rt></ruby><ruby>足<rt>あし</rt></ruby>のしびれ、<ruby>気<rt>き</rt></ruby><ruby>分<rt>ぶん</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>い",
-                    "<ruby>発<rt>はつ</rt>熱<rt>ねつ</rt></ruby>、<ruby>激<rt>はげ</rt></ruby>しい<ruby>痛<rt>いた</rt></ruby>い<ruby>腹<rt>ふく</rt>痛<rt>つう</rt></ruby>、<ruby>下<rt>げ</rt>痢<rt>り</rt></ruby>",
-                    "<ruby>返<rt>へん</rt>事<rt>じ</rt></ruby>がおかしい、<ruby>意<rt>い</rt>識<rt>しき</rt></ruby><ruby>消<rt>しょう</rt>失<rt>しつ</rt></ruby>、けいれん、からだが<ruby>熱<rt>あつ</rt></ruby>い"
+                    "めまい、たちくらみ、手足[てあし]のしびれ、気分[きぶん]が悪[わる]い",
+                    "発熱[はつねつ]、激[はげ]しい痛[いた]い腹痛[ふくつう]、下痢[げり]",
+                    "返事[へんじ]がおかしい、意識消失[いしきしょうしつ]、けいれん、からだが熱[あつ]い"
                 ],
                 answer: 1
             },
             {
-                question: "<ruby>表<rt>ひょう</rt></ruby>はソーセージ1セット（5<ruby>本<rt>ほん</rt></ruby>）の<ruby>配<rt>はい</rt>合<rt>ごう</rt></ruby><ruby>例<rt>れい</rt></ruby>です。この<ruby>配<rt>はい</rt>合<rt>ごう</rt></ruby>に<ruby>従<rt>したが</rt></ruby>うと<ruby>豚<rt>ぶた</rt></ruby>ひき<ruby>肉<rt>にく</rt></ruby>6kgからどれだけのソーセージを作れるか",
+                question: "表[ひょう]はソーセージ1セット（5本[ほん]）の配合例[はいごうれい]です。この配合[はいごう]に従[したが]うと豚[ぶた]ひき肉[にく]6kgからどれだけのソーセージを作[つく]れるか",
                 options: [
-                    "20<ruby>本<rt>ほん</rt></ruby>",
-                    "120<ruby>本<rt>ほん</rt></ruby>",
-                    "180<ruby>本<rt>ほん</rt></ruby>"
+                    "20本[ほん]",
+                    "120本[ほん]",
+                    "180本[ほん]"
                 ],
                 answer: 1
             },
             {
-                question: "10%の<ruby>次<rt>じ</rt>亜<rt>あ</rt>塩<rt>えん</rt></ruby><ruby>素<rt>そ</rt></ruby><ruby>酸<rt>さん</rt></ruby>ナトリウム(NaOCl)の<ruby>溶<rt>よう</rt></ruby><ruby>液<rt>えき</rt></ruby>があります。5ml<ruby>溶<rt>よう</rt></ruby><ruby>液<rt>えき</rt></ruby>を<ruby>使<rt>つか</rt></ruby>用し、200ppm<ruby>次<rt>じ</rt>亜<rt>あ</rt>塩<rt>えん</rt></ruby><ruby>素<rt>そ</rt></ruby><ruby>酸<rt>さん</rt></ruby>ナトリウム(NaOCl)を作るために、どれぐらい<ruby>水<rt>みず</rt></ruby>が<ruby>必<rt>ひつ</rt>要<rt>よう</rt></ruby>ですか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。(200ppm=0.02%)",
+                question: "10%の次亜塩素酸[じあえんそさん]ナトリウム(NaOCl)の溶液[ようえき]があります。5ml溶液[ようえき]を使用[しよう]し、200ppm次亜塩素酸[じあえんそさん]ナトリウム(NaOCl)を作[つく]るために、どれぐらい水[みず]が必要[ひつよう]ですか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。(200ppm=0.02%)",
                 options: [
                     "2L",
                     "2.5L",
@@ -682,56 +682,56 @@ const sessionsData = {
                 answer: 1
             },
             {
-                question: "トレーを<ruby>両<rt>りょう</rt></ruby><ruby>手<rt>て</rt></ruby>で持物、歩いて<ruby>移<rt>い</rt>動<rt>どう</rt></ruby>しようとしたところ、<ruby>濡<rt>ぬ</rt></ruby>れた<ruby>床<rt>ゆか</rt></ruby>で<ruby>滑<rt>すべ</rt></ruby>って<ruby>転<rt>てん</rt>倒<rt>とう</rt></ruby>しそうになった。この<ruby>事<rt>じ</rt>故<rt>こ</rt></ruby>を<ruby>防<rt>ふせ</rt></ruby>ぐために、どうしたらいいですか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい",
+                question: "トレーを両手[りょうて]で持物、歩[ある]いて移動[いどう]しようとしたところ、濡[ぬ]れた床[ゆか]で滑[すべ]って転倒[てんとう]しそうになった。この事故[じこ]を防[ふせ]ぐために、どうしたらいいですか。正[ただ]しいものを一[ひと]つ選[えら]びなさい",
                 options: [
-                    "<ruby>床<rt>ゆか</rt></ruby>の<ruby>水<rt>みず</rt></ruby>をきちんとふき取る。",
-                    "<ruby>片<rt>かた</rt></ruby><ruby>手<rt>て</rt></ruby>で持つ。",
-                    "<ruby>両<rt>りょう</rt></ruby><ruby>手<rt>て</rt></ruby>で持つ。"
+                    "床[ゆか]の水[みず]をきちんとふき取[と]る。",
+                    "片手[かたて]で持[も]つ。",
+                    "両手[りょうて]で持[も]つ。"
                 ],
                 answer: 0
             },
             {
-                question: "パン<ruby>箱<rt>ばこ</rt></ruby>を<ruby>両<rt>りょう</rt></ruby><ruby>手<rt>て</rt></ruby>で持ち、トラックに向かって<ruby>停<rt>てい</rt>車<rt>しゃ</rt></ruby><ruby>場<rt>じょう</rt></ruby>を歩いていたとき、<ruby>通<rt>つう</rt>路<rt>ろ</rt></ruby>に置かれた<ruby>空<rt>から</rt></ruby><ruby>箱<rt>ばこ</rt></ruby>につまずき<ruby>転<rt>てん</rt>倒<rt>とう</rt></ruby>しそうになった。この<ruby>事<rt>じ</rt>故<rt>こ</rt></ruby>を<ruby>防<rt>ふせ</rt></ruby>ぐためにどうしたらいいですか。<br><ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい",
+                question: "パン箱[ばこ]を両手[りょうて]で持[も]ち、トラックに向[む]かって停車場[ていしゃじょう]を歩[ある]いていたとき、通路[つうろ]に置[お]かれた空箱[からばこ]につまずき転倒[てんとう]しそうになった。この事故[じこ]を防[ふせ]ぐためにどうしたらいいですか。<br>間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい",
                 options: [
-                    "<ruby>通<rt>つう</rt>路<rt>ろ</rt></ruby>に物をおいたままにしない。",
-                    "<ruby>作<rt>さ</rt>業<rt>ぎょう</rt></ruby><ruby>始<rt>し</rt></ruby><ruby>前<rt>まえ</rt></ruby>には<ruby>通<rt>つう</rt>路<rt>ろ</rt></ruby>の<ruby>安<rt>あん</rt>ぜん<rt>zen</rt></ruby>を<ruby>確<rt>かく</rt>認<rt>にん</rt></ruby>しなくてもいい。",
-                    "<ruby>箱<rt>hako</rt></ruby>を重ねてはこぶときは、前が見えるの数の箱をもつ"
+                    "通路[つうろ]に物[もの]をおいたままにしない。",
+                    "作業前[さぎょうまえ]には通路[つうろ]のあんぜんを確認[かくにん]しなくてもいい。",
+                    "箱[はこ]を重ね[かさね]てはこぶときは、前[まえ]が見[み]えるの数の箱[はこ]をもつ"
                 ],
                 answer: 1
             },
             {
-                question: "ベルトコンベアを止めない<ruby>清<rt>せい</rt>掃<rt>そう</rt></ruby>を行っていたところ、ぞうきんが引っ掛かって手が巻き込まれそうになった。この<ruby>事<rt>じ</rt>故<rt>こ</rt></ruby>の<ruby>原<rt>げん</rt>因<rt>いん</rt></ruby>は何ですか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい",
+                question: "ベルトコンベアを止[と]めない清掃[せいそう]を行[おこな]っていたところ、ぞうきんが引[ひ]っかかって手[て]が巻[ま]き込[こ]まれそうになった。この事故[じこ]の原因[げんいん]は何ですか。正[ただ]しいものを一[ひと]つ選[えら]びなさい",
                 options: [
-                    "<ruby>清<rt>せい</rt>掃<rt>そう</rt></ruby>するときにベルトコンベアを止めなかったため。",
-                    "ぞうきんを使って<ruby>清<rt>せい</rt>掃<rt>そう</rt></ruby>したため。",
-                    "<ruby>停<rt>てい</rt>止<rt>し</rt></ruby>ボタンを押したため。"
+                    "清掃[せいそう]するときにベルトコンベアを止[と]めなかったため。",
+                    "ぞうきんを使[つか]って清掃[せいそう]したため。",
+                    "停止[ていし]ボタンを押[お]したため。"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>安<rt>あん</rt>全<rt>ぜん</rt></ruby><ruby>標<rt>ひょう</rt>識<rt>しき</rt></ruby>について。下記の<ruby>標<rt>ひょう</rt>識<rt>しき</rt></ruby>はどういう意味ですか。<ruby>正<rt>ただ</rt></ruby>しいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "安全標識[あんぜんひょうしき]について。下記[かき]の標識[ひょうしき]はどういう意味[いみ]ですか。正[ただ]しいものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>手<rt>て</rt></ruby>で触れることを<ruby>禁<rt>きん</rt>止<rt>し</rt></ruby>する。",
-                    "<ruby>扉<rt>とびら</rt></ruby>をあけっぱなしにすることを<ruby>禁<rt>きん</rt>止<rt>し</rt></ruby>する。",
-                    "入ることを<ruby>禁<rt>きん</rt>止<rt>し</rt></ruby>する。"
+                    "手[て]で触[ふ]れることを禁止[きんし]する。",
+                    "扉[とびら]をあけっぱなしにすることを禁止[きんし]する。",
+                    "入[はい]ることを禁止[きんし]する。"
                 ],
                 answer: 2
             },
             {
-                question: "<ruby>安<rt>あん</rt>全<rt>ぜん</rt></ruby><ruby>標<rt>ひょう</rt>識<rt>しき</rt></ruby>について、はさまれる<ruby>危<rt>き</rt>険<rt>けん</rt></ruby>を知らせる<ruby>標<rt>ひょう</rt>識<rt>しき</rt></ruby>はどれですか。<br><ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+                question: "安全標識[あんぜんひょうしき]について、はさまれる危険[きけん]を知らせる標識[ひょうしき]はどれですか。<br>間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい。",
                 options: [
-                    "<ruby>標<rt>ひょう</rt>識<rt>しき</rt></ruby> A",
-                    "<ruby>標<rt>ひょう</rt>識<rt>しき</rt></ruby> B",
-                    "<ruby>標<rt>ひょう</rt>識<rt>しき</rt></ruby> C"
+                    "標識[ひょうしき] A",
+                    "標識[ひょうしき] B",
+                    "標識[ひょうしき] C"
                 ],
                 answer: 0
             },
             {
-                question: "<ruby>安<rt>あん</rt>全<rt>ぜん</rt></ruby><ruby>標<rt>ひょう</rt>識<rt>しき</rt></ruby>について、やけどをする<ruby>危<rt>険<rt>kiken</rt></ruby></ruby>を知らせる<ruby>標<rt>ひょう</rt>識<rt>shikishi</rt></ruby>はどれですか。<br><ruby>間<rt>ま</rt>違<rt>ちが</rt></ruby>っているものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい",
+                question: "安全標識[あんぜんひょうしき]について、やけどをする危険[きけん]を知らせる標識[ひょうしき]はどれですか。<br>間[ま]違[ちが]っているものを一[ひと]つ選[えら]びなさい",
                 options: [
-                    "<ruby>標<rt>ひょう</rt>識<rt>しき</rt></ruby> A",
-                    "<ruby>標<rt>ひょう</rt>識<rt>しき</rt></ruby> B",
-                    "<ruby>標<rt>ひょう</rt>識<rt>しき</rt></ruby> C"
+                    "標識[ひょうしき] A",
+                    "標識[ひょうしき] B",
+                    "標識[ひょうしき] C"
                 ],
                 answer: 1
             }
