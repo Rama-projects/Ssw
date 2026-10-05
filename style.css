@@ -168,3 +168,16 @@ rt {
 .hidden {
     display: none;
 }
+
+.nav-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-secondary {
+    background-color: #4a5568;
+}
+
+.btn-secondary:hover {
+    background-color: #2d3748;
+}
