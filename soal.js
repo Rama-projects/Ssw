@@ -368,7 +368,9 @@ const sessionsData = {
                     "右手だけ持つ"
                 ],
                 answer: 1
-            },
+            }
+         ]
+    },
 
             "sesi2": {
     title: "Paket 2",
@@ -734,6 +736,6 @@ const sessionsData = {
             ],
             answer: 1
         }
-        ]
+      ]
     }
 };
