@@ -70,12 +70,12 @@
     <script src="soal.js"></script>
 
     <script>
-        // 🛠️ FUNGSI OTOMATIS: Mengubah "Kanji[furigana]" menjadi tag HTML <ruby>
-        function parseFurigana(text) {
-            if (!text) return "";
-            // Mencari pola teks[furigana] dan mengubahnya jadi <ruby>teks<rt>furigana</rt></ruby>
-            return text.replace(/([\u4e00-\u9faf\u3040-\u309f\u30a0-\u30ff]+)\[(.*?)\]/g, '<ruby>$1<rt>$2</rt></ruby>');
-        }
+function parseFurigana(text) {
+    if (!text) return "";
+    let parsed = text.replace(/([一-龯々〆ヵヶ]+)(?:\[(.*?)\])/g, '<ruby>$1<rt>$2</rt></ruby>');
+    parsed = parsed.replace(/([\u4e00-\u9faf]+)(?:\[(.*?)\])/g, '<ruby>$1<rt>$2</rt></ruby>');
+    return parsed;
+}
 
         let currentSessionKey = "";
         let currentQuestions = [];
