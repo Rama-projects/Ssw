@@ -70,16 +70,22 @@ h2, h3 {
     font-size: 1.2rem;
     margin-bottom: 20px;
     color: #ecf0f1;
-    line-height: 1.8;
+    /* Jarak baris diperbesar agar furigana di atas kanji tidak bertabrakan */
+    line-height: 2.5; 
 }
 
+/* Pengaturan Furigana / Ruby */
 ruby {
     ruby-align: center;
+    ruby-position: over;
 }
+
 rt {
-    font-size: 0.6em;
-    color: #aaaaaa;
+    font-size: 0.55em;
+    /* Warna biru muda lembut agar sangat jelas dibaca di mode gelap */
+    color: #8ab4f8; 
     font-weight: normal;
+    user-select: none;
 }
 
 .options {
@@ -99,7 +105,8 @@ rt {
     cursor: pointer;
     transition: all 0.2s ease;
     font-size: 1.05rem;
-    line-height: 1.6;
+    /* Jarak baris disesuaikan untuk opsi jawaban */
+    line-height: 2.2; 
     color: #e0e0e0;
 }
 
