@@ -41,7 +41,7 @@
             <div class="session-grid" id="session-list"></div>
         </div>
 
-        <!-- Tampilan Kuis -->
+                <!-- Tampilan Kuis -->
         <div id="quiz-box" class="hidden">
             <div class="header-info">
                 <h3 id="session-title" style="margin:0; font-size: 1rem;"></h3>
@@ -49,7 +49,12 @@
             </div>
             <div id="question-container"></div>
             <div class="options" id="options-container"></div>
-            <button class="btn" id="next-btn" onclick="nextQuestion()">Selanjutnya</button>
+            
+            <!-- Area Tombol Navigasi -->
+            <div class="nav-buttons">
+                <button class="btn btn-secondary hidden" id="prev-btn" onclick="prevQuestion()">Sebelumnya</button>
+                <button class="btn" id="next-btn" onclick="nextQuestion()">Selanjutnya</button>
+            </div>
         </div>
 
         <!-- Tombol Menuju Lihat Skor -->
@@ -73,6 +78,9 @@
         let score = 0;
         let timerInterval;
         let timeLeft = 0;
+        
+        // Objek untuk menyimpan jawaban user sementara (key: index soal, value: index opsi)
+        let userAnswers = {};
 
         const sessionMenu = document.getElementById("session-menu");
         const sessionList = document.getElementById("session-list");
@@ -80,20 +88,11 @@
         const sessionTitle = document.getElementById("session-title");
         const questionContainer = document.getElementById("question-container");
         const optionsContainer = document.getElementById("options-container");
+        const prevBtn = document.getElementById("prev-btn");
+        const nextBtn = document.getElementById("next-btn");
         const scorePromptBox = document.getElementById("score-prompt-box");
         const resultBox = document.getElementById("result-box");
         const timerDisplay = document.getElementById("timer-display");
-
-        function initMenu() {
-            sessionList.innerHTML = "";
-            for (let key in sessionsData) {
-                const btn = document.createElement("button");
-                btn.classList.add("session-btn");
-                btn.innerHTML = `${sessionsData[key].title} <br><small style="color: #888; font-weight: normal;">(${sessionsData[key].questions.length} Soal)</small>`;
-                btn.onclick = () => startSession(key);
-                sessionList.appendChild(btn);
-            }
-        }
 
         function startSession(key) {
             currentSessionKey = key;
@@ -101,6 +100,7 @@
             currentQuestionIndex = 0;
             score = 0;
             timeLeft = sessionsData[key].timeLimit;
+            userAnswers = {}; // Reset jawaban tersimpan
 
             sessionMenu.classList.add("hidden");
             quizBox.classList.remove("hidden");
@@ -110,39 +110,25 @@
             loadQuiz();
         }
 
-        function startTimer() {
-            clearInterval(timerInterval);
-            timerInterval = setInterval(() => {
-                if (timeLeft <= 0) {
-                    clearInterval(timerInterval);
-                    alert("Waktu ujian telah habis!");
-                    finishQuiz();
-                } else {
-                    let minutes = Math.floor(timeLeft / 60);
-                    let seconds = timeLeft % 60;
-                    timerDisplay.innerText = `⏱️ ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-                    timeLeft--;
-                }
-            }, 1000);
-        }
-
-        function autoFurigana(text) {
-            let result = text;
-            for (let kanji in customDict) {
-                let rubyTag = `<ruby>${kanji}<rt>${customDict[kanji]}</rt></ruby>`;
-                let regex = new RegExp(kanji, "g");
-                result = result.replace(regex, rubyTag);
-            }
-            return result;
-        }
-
         function loadQuiz() {
             optionsContainer.innerHTML = "";
             const currentQuiz = currentQuestions[currentQuestionIndex];
-            
             const parsedQuestion = autoFurigana(currentQuiz.question);
             
-            // Render gambar pertanyaan jika ada
+            // Atur visibilitas tombol "Sebelumnya" (sembunyikan di soal pertama)
+            if (currentQuestionIndex === 0) {
+                prevBtn.classList.add("hidden");
+            } else {
+                prevBtn.classList.remove("hidden");
+            }
+
+            // Ubah teks tombol "Selanjutnya" jadi "Selesai" jika di soal terakhir
+            if (currentQuestionIndex === currentQuestions.length - 1) {
+                nextBtn.innerText = "Selesai";
+            } else {
+                nextBtn.innerText = "Selanjutnya";
+            }
+            
             let imageHTML = "";
             if (currentQuiz.image) {
                 imageHTML = `<img src="${currentQuiz.image}" alt="Gambar Soal" class="quiz-image">`;
@@ -156,7 +142,6 @@
                 </div>
             `;
 
-            // Render opsi jawaban (teks dan gambar opsional)
             currentQuiz.options.forEach((option, index) => {
                 const parsedOption = autoFurigana(option);
                 
@@ -167,8 +152,15 @@
 
                 const label = document.createElement("label");
                 label.classList.add("option-label");
+                
+                // Cek apakah opsi ini sebelumnya sudah pernah dipilih user
+                let checkedAttr = "";
+                if (userAnswers[currentQuestionIndex] === index) {
+                    checkedAttr = "checked";
+                }
+
                 label.innerHTML = `
-                    <input type="radio" name="answer" value="${index}">
+                    <input type="radio" name="answer" value="${index}" ${checkedAttr}>
                     <div class="option-content">
                         <span>${parsedOption}</span>
                         ${optImageHTML}
@@ -176,6 +168,15 @@
                 `;
                 optionsContainer.appendChild(label);
             });
+        }
+
+        function saveCurrentAnswer() {
+            const selectedOptions = document.querySelectorAll('input[name="answer"]:checked');
+            if (selectedOptions.length > 0) {
+                userAnswers[currentQuestionIndex] = parseInt(selectedOptions[0].value);
+            } else {
+                delete userAnswers[currentQuestionIndex]; // Hapus jika tidak ada yang dipilih
+            }
         }
 
         function nextQuestion() {
@@ -186,18 +187,36 @@
                 return;
             }
 
-            const userAnswer = parseInt(selectedOptions[0].value);
-
-            if (userAnswer === currentQuestions[currentQuestionIndex].answer) {
-                score++;
-            }
+            // Simpan jawaban saat ini
+            saveCurrentAnswer();
 
             currentQuestionIndex++;
 
             if (currentQuestionIndex < currentQuestions.length) {
                 loadQuiz();
             } else {
+                calculateFinalScore();
                 finishQuiz();
+            }
+        }
+
+        function prevQuestion() {
+            // Simpan jawaban soal saat ini sebelum mundur
+            saveCurrentAnswer();
+
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                loadQuiz();
+            }
+        }
+
+        function calculateFinalScore() {
+            score = 0;
+            // Hitung ulang keseluruhan skor berdasarkan objek userAnswers yang terkumpul
+            for (let i = 0; i < currentQuestions.length; i++) {
+                if (userAnswers[i] === currentQuestions[i].answer) {
+                    score++;
+                }
             }
         }
 
