@@ -6,7 +6,6 @@
     <title>Simulasi Ujian SSW Pengolahan Makanan</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Gaya tambahan khusus untuk gambar soal & jawaban */
         .quiz-image {
             max-width: 100%;
             height: auto;
@@ -68,10 +67,16 @@
         <div id="result-box" class="result-container hidden"></div>
     </div>
 
-    <!-- Kamus otomatis sudah dinonaktifkan / dihapus -->
     <script src="soal.js"></script>
 
     <script>
+        // 🛠️ FUNGSI OTOMATIS: Mengubah "Kanji[furigana]" menjadi tag HTML <ruby>
+        function parseFurigana(text) {
+            if (!text) return "";
+            // Mencari pola teks[furigana] dan mengubahnya jadi <ruby>teks<rt>furigana</rt></ruby>
+            return text.replace(/([\u4e00-\u9faf\u3040-\u309f\u30a0-\u30ff]+)\[(.*?)\]/g, '<ruby>$1<rt>$2</rt></ruby>');
+        }
+
         let currentSessionKey = "";
         let currentQuestions = [];
         let currentQuestionIndex = 0;
@@ -140,8 +145,8 @@
             optionsContainer.innerHTML = "";
             const currentQuiz = currentQuestions[currentQuestionIndex];
             
-            // Langsung menggunakan teks soal karena tag <ruby> sudah dipasang manual di soal.js
-            const parsedQuestion = currentQuiz.question;
+            // Otomatis parse furigana pada soal
+            const parsedQuestion = parseFurigana(currentQuiz.question);
             
             if (currentQuestionIndex === 0) {
                 prevBtn.classList.add("hidden");
@@ -169,8 +174,8 @@
             `;
 
             currentQuiz.options.forEach((option, index) => {
-                // Langsung menggunakan teks opsi apa adanya
-                const parsedOption = option;
+                // Otomatis parse furigana pada opsi jawaban
+                const parsedOption = parseFurigana(option);
                 
                 let optImageHTML = "";
                 if (currentQuiz.optionImages && currentQuiz.optionImages[index]) {
@@ -214,7 +219,6 @@
             }
 
             saveCurrentAnswer();
-
             currentQuestionIndex++;
 
             if (currentQuestionIndex < currentQuestions.length) {
@@ -278,6 +282,5 @@
 
         initMenu();
     </script>
-
 </body>
 </html>
