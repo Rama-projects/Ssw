@@ -1,6 +1,5 @@
-// Data Paket 5, 6, dan 7 (Masing-masing lengkap 40 Soal)
 sessionsData["sesi5"] = {
-    title: "Paket 5 (Jari Terkikis)",
+    title: "Paket 5",
     timeLimit: 3600,
     questions: [
         {
